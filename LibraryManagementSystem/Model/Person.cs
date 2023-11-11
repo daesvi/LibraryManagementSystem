@@ -27,6 +27,8 @@ namespace LibraryManagementSystem.Model
         public string Email { get => email; set => email = value; }
 
         // Constructor
+        public Person() { }
+
         public Person(string identification, string name, int age, string gender, string address, string phoneNumber, string email)
         {
             this.identification = identification;
