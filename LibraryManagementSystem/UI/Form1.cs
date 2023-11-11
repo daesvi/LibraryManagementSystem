@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using LibraryManagementSystem.data;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,19 +21,18 @@ namespace LibraryManagementSystem
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string connectionString = DatabaseConfig.GetConnectionString();
-
-            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            try
             {
-                try
+                using (var context = new LibraryContext())
                 {
-                    connection.Open();
-                    MessageBox.Show("Conexion realizada con exito");
+                    context.Database.Initialize(force: false);
+
+                    MessageBox.Show("Conexión exitosa a la base de datos.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error al abrir la conexión a la base de datos: " + ex.Message);
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al conectar a la base de datos: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
