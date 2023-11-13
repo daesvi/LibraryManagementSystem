@@ -44,9 +44,13 @@
             this.registerBtn = new MaterialSkin.Controls.MaterialButton();
             this.passwordBox2 = new MaterialSkin.Controls.MaterialTextBox();
             this.passwordBox = new MaterialSkin.Controls.MaterialTextBox();
+            this.eye2Picture = new System.Windows.Forms.PictureBox();
+            this.eyePicture = new System.Windows.Forms.PictureBox();
             this.materialTabControl1.SuspendLayout();
             this.dataPage.SuspendLayout();
             this.credentialPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eye2Picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eyePicture)).BeginInit();
             this.SuspendLayout();
             // 
             // materialDrawer1
@@ -239,6 +243,8 @@
             // credentialPage
             // 
             this.credentialPage.BackColor = System.Drawing.SystemColors.Control;
+            this.credentialPage.Controls.Add(this.eye2Picture);
+            this.credentialPage.Controls.Add(this.eyePicture);
             this.credentialPage.Controls.Add(this.materialLabel2);
             this.credentialPage.Controls.Add(this.registerBtn);
             this.credentialPage.Controls.Add(this.passwordBox2);
@@ -269,7 +275,7 @@
             this.registerBtn.Depth = 0;
             this.registerBtn.HighEmphasis = true;
             this.registerBtn.Icon = null;
-            this.registerBtn.Location = new System.Drawing.Point(200, 269);
+            this.registerBtn.Location = new System.Drawing.Point(200, 272);
             this.registerBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.registerBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.registerBtn.Name = "registerBtn";
@@ -289,11 +295,12 @@
             this.passwordBox2.Depth = 0;
             this.passwordBox2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.passwordBox2.LeadingIcon = null;
-            this.passwordBox2.Location = new System.Drawing.Point(114, 171);
+            this.passwordBox2.Location = new System.Drawing.Point(93, 172);
             this.passwordBox2.MaxLength = 50;
             this.passwordBox2.MouseState = MaterialSkin.MouseState.OUT;
             this.passwordBox2.Multiline = false;
             this.passwordBox2.Name = "passwordBox2";
+            this.passwordBox2.Password = true;
             this.passwordBox2.Size = new System.Drawing.Size(281, 50);
             this.passwordBox2.TabIndex = 2;
             this.passwordBox2.Text = "";
@@ -306,15 +313,38 @@
             this.passwordBox.Depth = 0;
             this.passwordBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.passwordBox.LeadingIcon = null;
-            this.passwordBox.Location = new System.Drawing.Point(114, 72);
+            this.passwordBox.Location = new System.Drawing.Point(93, 72);
             this.passwordBox.MaxLength = 50;
             this.passwordBox.MouseState = MaterialSkin.MouseState.OUT;
             this.passwordBox.Multiline = false;
             this.passwordBox.Name = "passwordBox";
+            this.passwordBox.Password = true;
             this.passwordBox.Size = new System.Drawing.Size(281, 50);
             this.passwordBox.TabIndex = 1;
             this.passwordBox.Text = "";
             this.passwordBox.TrailingIcon = null;
+            // 
+            // eye2Picture
+            // 
+            this.eye2Picture.Image = global::LibraryManagementSystem.Properties.Resources.vista;
+            this.eye2Picture.Location = new System.Drawing.Point(380, 182);
+            this.eye2Picture.Name = "eye2Picture";
+            this.eye2Picture.Size = new System.Drawing.Size(71, 40);
+            this.eye2Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.eye2Picture.TabIndex = 9;
+            this.eye2Picture.TabStop = false;
+            this.eye2Picture.Click += new System.EventHandler(this.eye2Picture_Click);
+            // 
+            // eyePicture
+            // 
+            this.eyePicture.Image = global::LibraryManagementSystem.Properties.Resources.vista;
+            this.eyePicture.Location = new System.Drawing.Point(380, 82);
+            this.eyePicture.Name = "eyePicture";
+            this.eyePicture.Size = new System.Drawing.Size(71, 40);
+            this.eyePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.eyePicture.TabIndex = 8;
+            this.eyePicture.TabStop = false;
+            this.eyePicture.Click += new System.EventHandler(this.eyePicture_Click);
             // 
             // SignUp
             // 
@@ -326,13 +356,15 @@
             this.DrawerTabControl = this.materialTabControl1;
             this.Name = "SignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sign up";
+            this.Text = "Registro";
             this.Load += new System.EventHandler(this.SignUp_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.dataPage.ResumeLayout(false);
             this.dataPage.PerformLayout();
             this.credentialPage.ResumeLayout(false);
             this.credentialPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eye2Picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eyePicture)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -354,5 +386,7 @@
         private MaterialSkin.Controls.MaterialTextBox passwordBox2;
         private MaterialSkin.Controls.MaterialButton registerBtn;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private System.Windows.Forms.PictureBox eyePicture;
+        private System.Windows.Forms.PictureBox eye2Picture;
     }
 }

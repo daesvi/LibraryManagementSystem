@@ -8,5 +8,6 @@ namespace LibraryManagementSystem.services
         IEnumerable<User> GetAll();
         User GetById(long id);
         bool AddUser(User user);
+        bool login(long identification, string password);
     }
 }

@@ -142,5 +142,41 @@ namespace LibraryManagementSystem.ui
         {
 
         }
+
+        private void eyePicture_Click(object sender, EventArgs e)
+        {
+            if (passwordBox.Password)
+            {
+                passwordBox.Hide();
+                passwordBox.Password = false;
+                eyePicture.Image = Properties.Resources.cerrado;
+                passwordBox.Show();
+            }
+            else
+            {
+                passwordBox.Hide();
+                passwordBox.Password = true;
+                eyePicture.Image = Properties.Resources.vista;
+                passwordBox.Show();
+            }
+        }
+
+        private void eye2Picture_Click(object sender, EventArgs e)
+        {
+            if (passwordBox2.Password)
+            {
+                passwordBox2.Hide();
+                passwordBox2.Password = false;
+                eye2Picture.Image = Properties.Resources.cerrado;
+                passwordBox2.Show();
+            }
+            else
+            {
+                passwordBox2.Hide();
+                passwordBox2.Password = true;
+                eye2Picture.Image = Properties.Resources.vista;
+                passwordBox2.Show();
+            }
+        }
     }
 }

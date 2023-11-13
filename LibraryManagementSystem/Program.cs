@@ -25,7 +25,7 @@ namespace LibraryManagementSystem
             LibraryContext libraryContext = new LibraryContext();
             IUserRepository userRepository = new UserRepository(libraryContext);
             IUserService userService = new UserService(userRepository);
-            Application.Run(new SignUp(userService));
+            Application.Run(new LogIn(userService));
         }
     }
 }

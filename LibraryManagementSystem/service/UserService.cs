@@ -14,6 +14,32 @@ namespace LibraryManagementSystem.services
             _userRepository = userRepository;
         }
 
+        public bool login(long identification, string password)
+        {
+            // Try to get a user with the provided identification
+            User existingUser = _userRepository.GetById(identification);
+
+            // If no user is found with the provided identification, login fails
+            if (existingUser == null)
+            {
+                return false;
+            }
+            else
+            {
+                // Check if the provided password matches the user's password
+                if (existingUser.Password == password)
+                {
+                    return true;
+                }
+                else
+                {
+                    // Password is incorrect, login fails
+                    return false;
+                }
+            }
+        }
+
+
         public bool AddUser(User user)
         {
             // Try to get a user with the same id
