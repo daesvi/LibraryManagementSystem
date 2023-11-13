@@ -1,4 +1,4 @@
-# LMT (Library Management System)
+# LMS (Library Management System)
 
 Welcome to the Library Management System, a project designed to streamline library operations by efficiently managing books, loans, returns, and user interactions.
 
