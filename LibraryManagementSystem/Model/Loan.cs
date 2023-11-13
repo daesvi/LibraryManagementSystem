@@ -30,9 +30,8 @@ namespace LibraryManagementSystem.Model
         // Constructor
         public Loan() { }
 
-        public Loan(int id, Book book, User user, DateTime loanDate, DateTime dueDate)
+        public Loan(Book book, User user, DateTime loanDate, DateTime dueDate)
         {
-            Id = id;
             this.book = book;
             this.user = user;
             this.loanDate = loanDate;

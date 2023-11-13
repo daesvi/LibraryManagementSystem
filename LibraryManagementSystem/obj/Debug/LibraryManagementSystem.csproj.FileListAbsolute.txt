@@ -56,3 +56,6 @@ C:\Users\Daniel\source\repos\daesvi\LibraryManagementSystem\LibraryManagementSys
 C:\Users\Daniel\source\repos\daesvi\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\MaterialSkin.dll
 C:\Users\Daniel\source\repos\daesvi\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.ui.SignUp.resources
 C:\Users\Daniel\source\repos\daesvi\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.LogIn.resources
+C:\Users\Daniel\source\repos\daesvi\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.ui.LibrarianForm.resources
+C:\Users\Daniel\source\repos\daesvi\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Migrations.ConTipo.resources
+C:\Users\Daniel\source\repos\daesvi\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.ui.UserForm.resources

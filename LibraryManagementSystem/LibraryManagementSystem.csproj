@@ -122,6 +122,10 @@
     <Compile Include="interfaces\service\ILibrarianService.cs" />
     <Compile Include="interfaces\service\ILoanService.cs" />
     <Compile Include="interfaces\service\IUserService.cs" />
+    <Compile Include="Migrations\202311131650378_ConTipo.cs" />
+    <Compile Include="Migrations\202311131650378_ConTipo.designer.cs">
+      <DependentUpon>202311131650378_ConTipo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="model\Librarian.cs" />
     <Compile Include="model\Book.cs" />
@@ -136,6 +140,12 @@
     <Compile Include="service\LibrarianService.cs" />
     <Compile Include="service\LoanService.cs" />
     <Compile Include="service\UserService.cs" />
+    <Compile Include="ui\LibrarianForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\LibrarianForm.Designer.cs">
+      <DependentUpon>LibrarianForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ui\LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +160,15 @@
     <Compile Include="ui\SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="ui\UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Migrations\202311131650378_ConTipo.resx">
+      <DependentUpon>202311131650378_ConTipo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -160,11 +179,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ui\LibrarianForm.resx">
+      <DependentUpon>LibrarianForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ui\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ui\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -1,4 +1,5 @@
 ﻿using LibraryManagementSystem.data;
+using LibraryManagementSystem.Model;
 using LibraryManagementSystem.services;
 using LibraryManagementSystem.ui;
 using MaterialSkin;
@@ -37,7 +38,8 @@ namespace LibraryManagementSystem
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            this.Enabled = true;
+            this.Show();
         }
 
         private void eye2Picture_Click(object sender, EventArgs e)
@@ -74,10 +76,29 @@ namespace LibraryManagementSystem
 
                 // Check if the username and password are valid
                 bool isValidLogin = userService.login(userId, password);
+
                 if (isValidLogin)
                 {
-                    // Password is correct, login successful
-                    MessageBox.Show("Inicio de sesión exitoso.");
+                    // Password is correct, get the user
+                    User loggedInUser = userService.GetById(userId);
+                    // Check the "tipo" field and open the corresponding form
+                    if (loggedInUser != null)
+                    {
+                        if (loggedInUser.Tipo == 1)
+                        {
+                            MessageBox.Show("Inicio de sesión exitoso.");
+                            // Open the form UserForm
+                            UserForm userForm = new UserForm();
+                            userForm.ShowDialog();
+                        }
+                        else if (loggedInUser.Tipo == 2)
+                        {
+                            MessageBox.Show("Inicio de sesión exitoso.");
+                            // Open the form LibrarianForm
+                            LibrarianForm librarianForm = new LibrarianForm();
+                            librarianForm.ShowDialog();
+                        }
+                    }
                 }
                 else
                 {
@@ -88,7 +109,6 @@ namespace LibraryManagementSystem
             {
                 MessageBox.Show("El ID de usuario no es válido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
     }
 }

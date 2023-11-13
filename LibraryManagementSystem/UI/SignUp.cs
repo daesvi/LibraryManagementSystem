@@ -30,6 +30,7 @@ namespace LibraryManagementSystem.ui
                 Primary.Grey500, Accent.Indigo700,      
                 TextShade.WHITE                         
             );
+
             idBox.Hint = "Número de identificación";
             nameBox.Hint = "Nombre";
             addressBox.Hint = "Dirección";
@@ -43,12 +44,10 @@ namespace LibraryManagementSystem.ui
 
         private void SignUp_Load(object sender, EventArgs e)
         {
-
         }
 
         private void registerBtn_Click(object sender, EventArgs e)
         {
-            
             // Validate empty fields
             if (string.IsNullOrWhiteSpace(idBox.Text) ||
                 string.IsNullOrWhiteSpace(nameBox.Text) ||
@@ -107,6 +106,7 @@ namespace LibraryManagementSystem.ui
             {
                 Identification = long.Parse(idBox.Text),
                 Password = passwordBox.Text,
+                Tipo = 1, // Type 1 means normal user, type 2 means librarian
                 Name = nameBox.Text,
                 Age = ageSlider.Value,
                 Gender = genreList.Text,
@@ -116,13 +116,14 @@ namespace LibraryManagementSystem.ui
             };
 
             // Call the method of service to add the new user
-            
-
             bool addedUser = userService.AddUser(newUser);
             if (addedUser)
             {
-                // Close the registration form
-                this.Close();
+                MessageBox.Show("Registro exitoso. Ahora puedes iniciar sesión.");
+            }
+            else
+            {
+                MessageBox.Show("Ya existe un usuario con la misma identificación.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

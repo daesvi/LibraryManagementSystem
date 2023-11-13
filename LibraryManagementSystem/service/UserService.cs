@@ -48,15 +48,12 @@ namespace LibraryManagementSystem.services
             // If no exception is thrown, it means there is already a user with that id
             if (existingUser != null)
             {
-                MessageBox.Show("Ya existe un usuario con la misma identificación.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             else
             {
                 // If a user with the same ID was not found, add the new user
                 _userRepository.Add(user);
-                // Show a message to the user indicating that the registration was successful
-                MessageBox.Show("Registro exitoso. Ahora puedes iniciar sesión.");
                 return true;
             }
         }
