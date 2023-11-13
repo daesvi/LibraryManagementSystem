@@ -11,6 +11,8 @@ Welcome to the Library Management System, a project designed to streamline libra
   - [Non-Functional Requirements](#non-functional-requirements)
   - [Architecture](#architecture)
   - [Database](#database)
+  - [Members](#members)
+  - [License](#license)
 
 
 ---
