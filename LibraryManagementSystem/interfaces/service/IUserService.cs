@@ -5,6 +5,8 @@ namespace LibraryManagementSystem.services
 {
     public interface IUserService
     {
-        void AddUser(User user);
+        IEnumerable<User> GetAll();
+        User GetById(long id);
+        bool AddUser(User user);
     }
 }

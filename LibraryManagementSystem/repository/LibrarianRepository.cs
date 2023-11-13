@@ -31,25 +31,6 @@ namespace LibraryManagementSystem.repository
             dbContext.SaveChanges();
         }
 
-        public void Update(Librarian librarian)
-        {
-            var existingLibrarian = dbContext.Librarians.Find(librarian.Id);
-
-            if (existingLibrarian != null)
-            {
-                // Update the properties of the existing librarian
-                existingLibrarian.Name = librarian.Name;
-                existingLibrarian.Age = librarian.Age;
-                existingLibrarian.Gender = librarian.Gender;
-                existingLibrarian.Address = librarian.Address;
-                existingLibrarian.PhoneNumber = librarian.PhoneNumber;
-                existingLibrarian.Email = librarian.Email;
-
-                // Save changes to the database
-                dbContext.SaveChanges();
-            }
-        }
-
         public void Delete(int id)
         {
             var librarianToDelete = dbContext.Librarians.Find(id);

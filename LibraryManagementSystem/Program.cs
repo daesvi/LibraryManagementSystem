@@ -1,4 +1,9 @@
-﻿using System;
+﻿using LibraryManagementSystem.data;
+using LibraryManagementSystem.interfaces;
+using LibraryManagementSystem.repository;
+using LibraryManagementSystem.services;
+using LibraryManagementSystem.ui;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +21,11 @@ namespace LibraryManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            LibraryContext libraryContext = new LibraryContext();
+            IUserRepository userRepository = new UserRepository(libraryContext);
+            IUserService userService = new UserService(userRepository);
+            Application.Run(new SignUp(userService));
         }
     }
 }

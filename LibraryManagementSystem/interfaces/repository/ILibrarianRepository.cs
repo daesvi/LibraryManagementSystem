@@ -8,7 +8,5 @@ namespace LibraryManagementSystem.interfaces
         IEnumerable<Librarian> GetAll();
         Librarian GetById(int id);
         void Add(Librarian librarian);
-        void Update(Librarian librarian);
-        void Delete(int id);
     }
 }

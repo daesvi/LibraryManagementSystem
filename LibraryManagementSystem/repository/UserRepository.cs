@@ -1,6 +1,7 @@
 ﻿using LibraryManagementSystem.data;
 using LibraryManagementSystem.interfaces;
 using LibraryManagementSystem.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -20,45 +21,22 @@ namespace LibraryManagementSystem.repository
             return dbContext.Users.ToList();
         }
 
-        public User GetById(int id)
+        public User GetById(long id)
         {
             return dbContext.Users.Find(id);
         }
 
-        public void Add(User user)
+        public bool Add(User user)
         {
-            dbContext.Users.Add(user);
-            dbContext.SaveChanges();
-        }
-
-        public void Update(User user)
-        {
-            var existingUser = dbContext.Users.Find(user.Id);
-
-            if (existingUser != null)
+            try
             {
-                // Update the properties of the existing user
-                existingUser.Name = user.Name;
-                existingUser.Age = user.Age;
-                existingUser.Gender = user.Gender;
-                existingUser.Address = user.Address;
-                existingUser.PhoneNumber = user.PhoneNumber;
-                existingUser.Email = user.Email;
-
-                // Save changes to the database
+                dbContext.Users.Add(user);
                 dbContext.SaveChanges();
+                return true;
             }
-        }
-
-        public void Delete(int id)
-        {
-            var userToDelete = dbContext.Users.Find(id);
-
-            if (userToDelete != null)
+            catch (Exception ex)
             {
-                // Delete the user from the database
-                dbContext.Users.Remove(userToDelete);
-                dbContext.SaveChanges();
+                return false;
             }
         }
     }

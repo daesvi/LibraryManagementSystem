@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -9,16 +10,23 @@ namespace LibraryManagementSystem.Model
 {
     public class Librarian : Person
     {
-        // Configure Id as primary key and autoincremental
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        // Attributes
+        long identification;
+        string password;
 
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public long Identification { get => identification; set => identification = value; }
+        public string Password { get => password; set => password = value; }
 
         public Librarian() { }
 
-        public Librarian(string identification, string name, int age, string gender, string address, string phoneNumber, string email)
-            : base(identification, name, age, gender, address, phoneNumber, email)
+        public Librarian(long identification, string password,string name, int age, string gender, string address, string phoneNumber, string email)
+            : base(name, age, gender, address, phoneNumber, email)
         {
+            Identification = identification;
+            Password = password;
         }
+
+        
     }
 }
