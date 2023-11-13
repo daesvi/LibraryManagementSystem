@@ -88,15 +88,17 @@ namespace LibraryManagementSystem
                         {
                             MessageBox.Show("Inicio de sesión exitoso.");
                             // Open the form UserForm
+                            /*
                             UserForm userForm = new UserForm();
-                            userForm.ShowDialog();
+                            userForm.ShowDialog();*/
                         }
                         else if (loggedInUser.Tipo == 2)
                         {
                             MessageBox.Show("Inicio de sesión exitoso.");
                             // Open the form LibrarianForm
+                            /*
                             LibrarianForm librarianForm = new LibrarianForm();
-                            librarianForm.ShowDialog();
+                            librarianForm.ShowDialog();*/
                         }
                     }
                 }

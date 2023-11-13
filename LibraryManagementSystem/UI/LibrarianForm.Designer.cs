@@ -378,6 +378,7 @@
             this.copiesSlide.Size = new System.Drawing.Size(325, 40);
             this.copiesSlide.TabIndex = 6;
             this.copiesSlide.Text = "Numero de copias";
+            this.copiesSlide.Value = 0;
             // 
             // yearBox
             // 
@@ -517,6 +518,7 @@
             this.searchAuthorBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.searchAuthorBtn.UseAccentColor = false;
             this.searchAuthorBtn.UseVisualStyleBackColor = true;
+            this.searchAuthorBtn.Click += new System.EventHandler(this.searchAuthorBtn_Click);
             // 
             // searchCategoryBtn
             // 
@@ -536,6 +538,7 @@
             this.searchCategoryBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.searchCategoryBtn.UseAccentColor = false;
             this.searchCategoryBtn.UseVisualStyleBackColor = true;
+            this.searchCategoryBtn.Click += new System.EventHandler(this.searchCategoryBtn_Click);
             // 
             // categorySearchBox
             // 
@@ -627,6 +630,7 @@
             // 
             this.yearListView.Text = "Año";
             this.yearListView.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.yearListView.Width = 70;
             // 
             // materialTabControl1
             // 

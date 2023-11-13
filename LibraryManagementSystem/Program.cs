@@ -21,14 +21,17 @@ namespace LibraryManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            /*
+            
            LibraryContext libraryContext = new LibraryContext();
-           IUserRepository userRepository = new UserRepository(libraryContext);
-           IUserService userService = new UserService(userRepository);
-           Application.Run(new LogIn(userService)); */
+            
+            IUserRepository userRepository = new UserRepository(libraryContext);
+            IUserService userService = new UserService(userRepository);
+            /*Application.Run(new LogIn(userService)); */
+            IBookRepository bookRepository = new BookRepository(libraryContext);
+            IBookService bookService = new BookService(bookRepository);
 
-            //Application.Run(new LibrarianForm());
-            Application.Run(new UserForm());
+            Application.Run(new LibrarianForm(bookService));
+            //Application.Run(new UserForm());
         }
     }
 }

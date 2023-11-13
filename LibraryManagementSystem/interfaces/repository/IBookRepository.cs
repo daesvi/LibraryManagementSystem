@@ -14,5 +14,9 @@ namespace LibraryManagementSystem.interfaces
         void Add(Book book);
         void Update(Book book);
         void Delete(int id);
+
+        IEnumerable<Book> SearchBooksByTitle(string title);
+        IEnumerable<Book> SearchBooksByAuthor(string searchAuthor);
+        IEnumerable<Book> SearchBooksByCategory(string category);
     }
 }

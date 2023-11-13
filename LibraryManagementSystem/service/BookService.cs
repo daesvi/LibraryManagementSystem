@@ -33,6 +33,22 @@ namespace LibraryManagementSystem.services
             _bookRepository.Update(book);
         }
 
+        public IEnumerable<Book> SearchBooksByTitle(string searchTerm)
+        {
+            return _bookRepository.SearchBooksByTitle(searchTerm);
+        }
+
+        public IEnumerable<Book> SearchBooksByAuthor(string searchAuthor)
+        {
+            return _bookRepository.SearchBooksByAuthor(searchAuthor);
+        }
+
+        public IEnumerable<Book> SearchBooksByCategory(string category)
+        {
+            return _bookRepository.SearchBooksByCategory(category);
+        }
+
+
         public void DeleteBook(int id)
         {
             _bookRepository.Delete(id);

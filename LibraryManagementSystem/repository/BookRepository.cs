@@ -43,13 +43,26 @@ namespace LibraryManagementSystem.repository
                 // Update the properties of the existing book
                 existingBook.Title = book.Title;
                 existingBook.Author = book.Author;
-                existingBook.Category = book.Category;
                 existingBook.NumberOfCopies = book.NumberOfCopies;
-                existingBook.PublicationYear = book.PublicationYear;
 
                 // Save changes to the database
                 dbContext.SaveChanges();
             }
+        }
+
+        public IEnumerable<Book> SearchBooksByTitle(string title)
+        {
+            return dbContext.Books.Where(book => book.Title.Contains(title)).ToList();
+        }
+
+        public IEnumerable<Book> SearchBooksByAuthor(string searchAuthor)
+        {
+            return dbContext.Books.Where(b => b.Author.Contains(searchAuthor)).ToList();
+        }
+
+        public IEnumerable<Book> SearchBooksByCategory(string category)
+        {
+            return dbContext.Books.Where(book => book.Category.Equals(category, StringComparison.OrdinalIgnoreCase)).ToList();
         }
 
         public void Delete(int id)

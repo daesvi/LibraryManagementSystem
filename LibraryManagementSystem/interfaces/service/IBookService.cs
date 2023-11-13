@@ -10,5 +10,9 @@ namespace LibraryManagementSystem.services
         void AddBook(Book book);
         void UpdateBook(Book book);
         void DeleteBook(int id);
+
+        IEnumerable<Book> SearchBooksByTitle(string searchTerm);
+        IEnumerable<Book> SearchBooksByAuthor(string searchAuthor);
+        IEnumerable<Book> SearchBooksByCategory(string category);
     }
 }
