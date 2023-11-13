@@ -17,11 +17,15 @@ namespace LibraryManagementSystem.ui
     public partial class LibrarianForm : MaterialForm
     {
         private readonly IBookService bookService;
+        private readonly IUserService userService;
+        private readonly ILoanService loanService;
 
-        public LibrarianForm(IBookService bookService)
+        public LibrarianForm(IBookService bookService, IUserService userService, ILoanService loanService)
         {
             InitializeComponent();
             this.bookService = bookService;
+            this.userService = userService;
+            this.loanService = loanService;
 
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.ColorScheme = new ColorScheme(
@@ -45,11 +49,62 @@ namespace LibraryManagementSystem.ui
 
         private void LibrarianForm_Load(object sender, EventArgs e)
         {
+
         }
 
         private void registerLoanBtn_Click(object sender, EventArgs e)
         {
+            // Get the form data
+            string idBookText = idBookBox.Text;
+            string idUserText = idUserBox.Text;
+            DateTime dueDate = dueDateBook.Value;
 
+            // Validates that the fields are not empty
+            if (string.IsNullOrWhiteSpace(idBookText) || string.IsNullOrWhiteSpace(idUserText))
+            {
+                MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Validate that the IDs are valid
+            if (!int.TryParse(idBookText, out int bookId) || !int.TryParse(idUserText, out int userId))
+            {
+                MessageBox.Show("Por favor, ingrese IDs de libro y usuario válidos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Get the book and user from the database
+            Book selectedBook = bookService.GetBookById(bookId);
+            User selectedUser = userService.GetById(userId);
+
+            // Validate that the book and the user exist
+            if (selectedBook == null || selectedUser == null)
+            {
+                MessageBox.Show("No se encontró el libro o el usuario con los IDs proporcionados.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Validate that the return date is greater than the current date
+            if (dueDate <= DateTime.Now)
+            {
+                MessageBox.Show("La fecha de devolución debe ser posterior a la fecha actual.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Create a Loan object with the data provided
+            // The loan date is taken from the real time in which the request is made.
+            Loan newLoan = new Loan(selectedBook, selectedUser, DateTime.Now, dueDate);
+
+            // Use the service to add the loan
+            try
+            {
+                loanService.AddLoan(newLoan);
+                MessageBox.Show("Préstamo registrado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al registrar el préstamo: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
 

@@ -31,7 +31,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.idUserBox = new MaterialSkin.Controls.MaterialTextBox();
             this.idBookBox = new MaterialSkin.Controls.MaterialTextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dueDateBook = new System.Windows.Forms.DateTimePicker();
             this.registerLoanBtn = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
@@ -80,7 +80,7 @@
             this.tabPage1.Controls.Add(this.registerLoanBtn);
             this.tabPage1.Controls.Add(this.idBookBox);
             this.tabPage1.Controls.Add(this.idUserBox);
-            this.tabPage1.Controls.Add(this.dateTimePicker1);
+            this.tabPage1.Controls.Add(this.dueDateBook);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Size = new System.Drawing.Size(786, 357);
@@ -121,12 +121,12 @@
             this.idBookBox.Text = "";
             this.idBookBox.TrailingIcon = null;
             // 
-            // dateTimePicker1
+            // dueDateBook
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(246, 233);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(281, 20);
-            this.dateTimePicker1.TabIndex = 6;
+            this.dueDateBook.Location = new System.Drawing.Point(246, 233);
+            this.dueDateBook.Name = "dueDateBook";
+            this.dueDateBook.Size = new System.Drawing.Size(281, 20);
+            this.dueDateBook.TabIndex = 6;
             // 
             // registerLoanBtn
             // 
@@ -680,7 +680,7 @@
         private MaterialSkin.Controls.MaterialButton registerLoanBtn;
         private MaterialSkin.Controls.MaterialTextBox idBookBox;
         private MaterialSkin.Controls.MaterialTextBox idUserBox;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dueDateBook;
         private System.Windows.Forms.TabPage credentialPage;
         private MaterialSkin.Controls.MaterialButton saveChangesBtn;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
