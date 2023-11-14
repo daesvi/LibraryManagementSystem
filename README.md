@@ -46,6 +46,7 @@ Welcome to the Library Management System, a project designed to streamline libra
 ## Table of Contents
 
 - [LMT (Library Management System)](#lmt-library-management-system)
+  - [Images](#Images)
   - [Description](#description)
   - [Functional Requirements](#functional-requirements)
   - [Non-Functional Requirements](#non-functional-requirements)
