@@ -16,20 +16,26 @@ Welcome to the Library Management System, a project designed to streamline libra
 
 ## Images
 
+### Screenshot 1
 ![Screenshot 1](LibraryManagementSystem/resources/Screenshot1.png)
-*Caption for Screenshot 1.*
+*Login form*
 
+### Screenshot 2
 ![Screenshot 2](LibraryManagementSystem/resources/screenshot3.png)
-*Caption for Screenshot 2.*
+*Registration Form*
 
-![Screenshot 2](LibraryManagementSystem/resources/screenshot4.png)
-*Caption for Screenshot 2.*
+### Screenshot 3
+![Screenshot 3](LibraryManagementSystem/resources/screenshot4.png)
+*credentials section in the registration form*
 
-![Screenshot 2](LibraryManagementSystem/resources/Screenshot5.png)
-*Caption for Screenshot 2.*
+### Screenshot 4
+![Screenshot 4](LibraryManagementSystem/resources/Screenshot5.png)
+*sample search book by search criteria section from normal user interface*
 
-![Screenshot 2](LibraryManagementSystem/resources/Screenshot6.png)
-*Caption for Screenshot 2.*
+### Screenshot 5
+![Screenshot 5](LibraryManagementSystem/resources/Screenshot6.png)
+*One of the views of a librarian profile, where you can see some of the sections enabled within this profile. A sample of what a librarian could do*
+
 
 ---
 ## Table of Contents
