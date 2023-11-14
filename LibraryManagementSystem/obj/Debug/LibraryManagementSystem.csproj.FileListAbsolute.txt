@@ -59,3 +59,5 @@ C:\Users\Daniel\source\repos\daesvi\LibraryManagementSystem\LibraryManagementSys
 C:\Users\Daniel\source\repos\daesvi\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.ui.LibrarianForm.resources
 C:\Users\Daniel\source\repos\daesvi\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Migrations.ConTipo.resources
 C:\Users\Daniel\source\repos\daesvi\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.ui.UserForm.resources
+C:\Users\Daniel\source\repos\daesvi\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Migrations.WithoutBook1.resources
+C:\Users\Daniel\source\repos\daesvi\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Migrations.UpdateLoan.resources

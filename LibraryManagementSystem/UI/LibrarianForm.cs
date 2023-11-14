@@ -73,17 +73,6 @@ namespace LibraryManagementSystem.ui
                 return;
             }
 
-            // Get the book and user from the database
-            Book selectedBook = bookService.GetBookById(bookId);
-            User selectedUser = userService.GetById(userId);
-
-            // Validate that the book and the user exist
-            if (selectedBook == null || selectedUser == null)
-            {
-                MessageBox.Show("No se encontró el libro o el usuario con los IDs proporcionados.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
             // Validate that the return date is greater than the current date
             if (dueDate <= DateTime.Now)
             {
@@ -93,7 +82,7 @@ namespace LibraryManagementSystem.ui
 
             // Create a Loan object with the data provided
             // The loan date is taken from the real time in which the request is made.
-            Loan newLoan = new Loan(selectedBook, selectedUser, DateTime.Now, dueDate);
+            Loan newLoan = new Loan(idBookText, long.Parse(idUserBox.Text), DateTime.Now, dueDate);
 
             // Use the service to add the loan
             try
@@ -342,6 +331,41 @@ namespace LibraryManagementSystem.ui
             catch (Exception ex)
             {
                 MessageBox.Show($"Error al realizar la búsqueda: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void loadLoansBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loadLoansBtn_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                // Get the all list of loans
+                IEnumerable<Loan> loans = loanService.GetAll();
+
+                // Clear the ListView before adding new items
+                loansHistoryListView.Items.Clear();
+
+                // Cycle through the loans and add each one to the ListView
+                foreach (Loan loan in loans)
+                {
+                    // Create a ListView Item with the loan details
+                    ListViewItem item = new ListViewItem(Convert.ToString(loan.UserIdentification));
+
+                    item.SubItems.Add(loan.BookTitle);
+                    item.SubItems.Add(loan.LoanDate.ToString());
+                    item.SubItems.Add(loan.DueDate.ToString());
+
+                    // Adds the ListView Item to the ListView
+                    loansHistoryListView.Items.Add(item);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar los préstamos: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

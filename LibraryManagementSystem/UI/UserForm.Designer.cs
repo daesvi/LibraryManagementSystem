@@ -44,12 +44,13 @@
             this.titleSearchBox = new MaterialSkin.Controls.MaterialTextBox();
             this.categorySearchBox = new MaterialSkin.Controls.MaterialComboBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.materialListView1 = new MaterialSkin.Controls.MaterialListView();
-            this.registerLoanBtn = new MaterialSkin.Controls.MaterialButton();
+            this.loansHistoryListView = new MaterialSkin.Controls.MaterialListView();
             this.idLoanListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.bookLoanListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.dateLoanListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.dueDateLoanListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.loadLoansBtn = new MaterialSkin.Controls.MaterialButton();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialTabControl1.SuspendLayout();
             this.dataPage.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -165,6 +166,7 @@
             this.searchCategoryBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.searchCategoryBtn.UseAccentColor = false;
             this.searchCategoryBtn.UseVisualStyleBackColor = true;
+            this.searchCategoryBtn.Click += new System.EventHandler(this.searchCategoryBtn_Click);
             // 
             // searchAuthorBtn
             // 
@@ -184,6 +186,7 @@
             this.searchAuthorBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.searchAuthorBtn.UseAccentColor = false;
             this.searchAuthorBtn.UseVisualStyleBackColor = true;
+            this.searchAuthorBtn.Click += new System.EventHandler(this.searchAuthorBtn_Click);
             // 
             // searchTitleBtn
             // 
@@ -203,6 +206,7 @@
             this.searchTitleBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.searchTitleBtn.UseAccentColor = false;
             this.searchTitleBtn.UseVisualStyleBackColor = true;
+            this.searchTitleBtn.Click += new System.EventHandler(this.searchTitleBtn_Click);
             // 
             // authorSearchBox
             // 
@@ -271,67 +275,48 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage1.Controls.Add(this.materialListView1);
-            this.tabPage1.Controls.Add(this.registerLoanBtn);
+            this.tabPage1.Controls.Add(this.materialLabel1);
+            this.tabPage1.Controls.Add(this.loansHistoryListView);
+            this.tabPage1.Controls.Add(this.loadLoansBtn);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Size = new System.Drawing.Size(786, 357);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Historial préstamo";
             // 
-            // materialListView1
+            // loansHistoryListView
             // 
-            this.materialListView1.AutoSizeTable = false;
-            this.materialListView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialListView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.loansHistoryListView.AutoSizeTable = false;
+            this.loansHistoryListView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.loansHistoryListView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.loansHistoryListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.idLoanListView,
             this.bookLoanListView,
             this.dateLoanListView,
             this.dueDateLoanListView});
-            this.materialListView1.Depth = 0;
-            this.materialListView1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialListView1.FullRowSelect = true;
-            this.materialListView1.HideSelection = false;
-            this.materialListView1.Location = new System.Drawing.Point(0, 0);
-            this.materialListView1.MinimumSize = new System.Drawing.Size(200, 100);
-            this.materialListView1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialListView1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialListView1.Name = "materialListView1";
-            this.materialListView1.OwnerDraw = true;
-            this.materialListView1.Size = new System.Drawing.Size(786, 293);
-            this.materialListView1.TabIndex = 8;
-            this.materialListView1.UseCompatibleStateImageBehavior = false;
-            this.materialListView1.View = System.Windows.Forms.View.Details;
-            this.materialListView1.SelectedIndexChanged += new System.EventHandler(this.materialListView1_SelectedIndexChanged);
-            // 
-            // registerLoanBtn
-            // 
-            this.registerLoanBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.registerLoanBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.registerLoanBtn.Depth = 0;
-            this.registerLoanBtn.HighEmphasis = true;
-            this.registerLoanBtn.Icon = null;
-            this.registerLoanBtn.Location = new System.Drawing.Point(296, 315);
-            this.registerLoanBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.registerLoanBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.registerLoanBtn.Name = "registerLoanBtn";
-            this.registerLoanBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.registerLoanBtn.Size = new System.Drawing.Size(169, 36);
-            this.registerLoanBtn.TabIndex = 7;
-            this.registerLoanBtn.Text = "Cargar préstamos";
-            this.registerLoanBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.registerLoanBtn.UseAccentColor = false;
-            this.registerLoanBtn.UseVisualStyleBackColor = true;
-            this.registerLoanBtn.Click += new System.EventHandler(this.registerLoanBtn_Click);
+            this.loansHistoryListView.Depth = 0;
+            this.loansHistoryListView.FullRowSelect = true;
+            this.loansHistoryListView.HideSelection = false;
+            this.loansHistoryListView.Location = new System.Drawing.Point(-4, 62);
+            this.loansHistoryListView.MinimumSize = new System.Drawing.Size(200, 100);
+            this.loansHistoryListView.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.loansHistoryListView.MouseState = MaterialSkin.MouseState.OUT;
+            this.loansHistoryListView.Name = "loansHistoryListView";
+            this.loansHistoryListView.OwnerDraw = true;
+            this.loansHistoryListView.Size = new System.Drawing.Size(802, 229);
+            this.loansHistoryListView.TabIndex = 8;
+            this.loansHistoryListView.UseCompatibleStateImageBehavior = false;
+            this.loansHistoryListView.View = System.Windows.Forms.View.Details;
+            this.loansHistoryListView.SelectedIndexChanged += new System.EventHandler(this.materialListView1_SelectedIndexChanged);
             // 
             // idLoanListView
             // 
             this.idLoanListView.Text = "ID";
+            this.idLoanListView.Width = 100;
             // 
             // bookLoanListView
             // 
-            this.bookLoanListView.Text = "Libro";
+            this.bookLoanListView.Text = "Nombre del libro";
             this.bookLoanListView.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.bookLoanListView.Width = 300;
             // 
@@ -346,6 +331,38 @@
             this.dueDateLoanListView.Text = "Fecha devolución";
             this.dueDateLoanListView.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.dueDateLoanListView.Width = 200;
+            // 
+            // loadLoansBtn
+            // 
+            this.loadLoansBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.loadLoansBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.loadLoansBtn.Depth = 0;
+            this.loadLoansBtn.HighEmphasis = true;
+            this.loadLoansBtn.Icon = null;
+            this.loadLoansBtn.Location = new System.Drawing.Point(317, 315);
+            this.loadLoansBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.loadLoansBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.loadLoansBtn.Name = "loadLoansBtn";
+            this.loadLoansBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.loadLoansBtn.Size = new System.Drawing.Size(169, 36);
+            this.loadLoansBtn.TabIndex = 7;
+            this.loadLoansBtn.Text = "Cargar préstamos";
+            this.loadLoansBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.loadLoansBtn.UseAccentColor = false;
+            this.loadLoansBtn.UseVisualStyleBackColor = true;
+            this.loadLoansBtn.Click += new System.EventHandler(this.loadLoansBtn_Click);
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Location = new System.Drawing.Point(294, 16);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(202, 19);
+            this.materialLabel1.TabIndex = 9;
+            this.materialLabel1.Text = "HISTORIAL DE PRÉSTAMOS";
             // 
             // UserForm
             // 
@@ -385,11 +402,12 @@
         private MaterialSkin.Controls.MaterialTextBox titleSearchBox;
         private MaterialSkin.Controls.MaterialComboBox categorySearchBox;
         private System.Windows.Forms.TabPage tabPage1;
-        private MaterialSkin.Controls.MaterialButton registerLoanBtn;
-        private MaterialSkin.Controls.MaterialListView materialListView1;
+        private MaterialSkin.Controls.MaterialButton loadLoansBtn;
+        private MaterialSkin.Controls.MaterialListView loansHistoryListView;
         private System.Windows.Forms.ColumnHeader idLoanListView;
         private System.Windows.Forms.ColumnHeader bookLoanListView;
         private System.Windows.Forms.ColumnHeader dateLoanListView;
         private System.Windows.Forms.ColumnHeader dueDateLoanListView;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
     }
 }

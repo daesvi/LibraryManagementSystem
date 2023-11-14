@@ -9,5 +9,7 @@ namespace LibraryManagementSystem.interfaces
         Loan GetById(int id);
         void Add(Loan loan);
         void Delete(int id);
+
+        IEnumerable<Loan> GetLoansByUserId(long id);
     }
 }

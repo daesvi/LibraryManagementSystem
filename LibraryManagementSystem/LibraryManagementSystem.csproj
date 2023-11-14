@@ -126,6 +126,14 @@
     <Compile Include="Migrations\202311131650378_ConTipo.designer.cs">
       <DependentUpon>202311131650378_ConTipo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202311140002576_WithoutBook1.cs" />
+    <Compile Include="Migrations\202311140002576_WithoutBook1.designer.cs">
+      <DependentUpon>202311140002576_WithoutBook1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311140025380_UpdateLoan.cs" />
+    <Compile Include="Migrations\202311140025380_UpdateLoan.designer.cs">
+      <DependentUpon>202311140025380_UpdateLoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="model\Librarian.cs" />
     <Compile Include="model\Book.cs" />
@@ -168,6 +176,12 @@
     </Compile>
     <EmbeddedResource Include="Migrations\202311131650378_ConTipo.resx">
       <DependentUpon>202311131650378_ConTipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311140002576_WithoutBook1.resx">
+      <DependentUpon>202311140002576_WithoutBook1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311140025380_UpdateLoan.resx">
+      <DependentUpon>202311140025380_UpdateLoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

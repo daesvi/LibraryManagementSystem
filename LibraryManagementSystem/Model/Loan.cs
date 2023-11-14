@@ -14,26 +14,25 @@ namespace LibraryManagementSystem.Model
         public int Id { get; set; }
 
         // Attributes
-        Book book;
-        User user;
+        string bookTitle;
+        long userIdentification;
         DateTime loanDate;
         DateTime dueDate;
 
         // Getters and Setters
-        public Book Book { get => book; set => book = value; }
-        public Book Book1 { get => book; set => book = value; }
-        public User User { get => user; set => user = value; }
         public DateTime LoanDate { get => loanDate; set => loanDate = value; }
         public DateTime DueDate { get => dueDate; set => dueDate = value; }
+        public string BookTitle { get => bookTitle; set => bookTitle = value; }
+        public long UserIdentification { get => userIdentification; set => userIdentification = value; }
 
 
         // Constructor
         public Loan() { }
 
-        public Loan(Book book, User user, DateTime loanDate, DateTime dueDate)
+        public Loan(string bookTitle, long userIdentification, DateTime loanDate, DateTime dueDate)
         {
-            this.book = book;
-            this.user = user;
+            this.bookTitle = bookTitle;
+            this.userIdentification = userIdentification;
             this.loanDate = loanDate;
             this.dueDate = dueDate;
         }

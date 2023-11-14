@@ -28,10 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.loadLoansBtn = new MaterialSkin.Controls.MaterialButton();
+            this.loansHistoryListView = new MaterialSkin.Controls.MaterialListView();
+            this.idLoanListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.bookLoanListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dateLoanListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dueDateLoanListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dueDateBook = new System.Windows.Forms.DateTimePicker();
             this.idUserBox = new MaterialSkin.Controls.MaterialTextBox();
             this.idBookBox = new MaterialSkin.Controls.MaterialTextBox();
-            this.dueDateBook = new System.Windows.Forms.DateTimePicker();
             this.registerLoanBtn = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
@@ -43,20 +52,20 @@
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.saveChangesBtn = new MaterialSkin.Controls.MaterialButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.categoryBox = new MaterialSkin.Controls.MaterialComboBox();
             this.titleBox = new MaterialSkin.Controls.MaterialTextBox();
             this.authorBox = new MaterialSkin.Controls.MaterialTextBox();
-            this.categoryBox = new MaterialSkin.Controls.MaterialComboBox();
             this.copiesSlide = new MaterialSkin.Controls.MaterialSlider();
             this.yearBox = new MaterialSkin.Controls.MaterialTextBox();
             this.registerBookBtn = new MaterialSkin.Controls.MaterialButton();
             this.buscarTxt = new MaterialSkin.Controls.MaterialLabel();
             this.dataPage = new System.Windows.Forms.TabPage();
+            this.categorySearchBox = new MaterialSkin.Controls.MaterialComboBox();
             this.titleSearchBox = new MaterialSkin.Controls.MaterialTextBox();
             this.authorSearchBox = new MaterialSkin.Controls.MaterialTextBox();
             this.searchTitleBtn = new MaterialSkin.Controls.MaterialButton();
             this.searchAuthorBtn = new MaterialSkin.Controls.MaterialButton();
             this.searchCategoryBtn = new MaterialSkin.Controls.MaterialButton();
-            this.categorySearchBox = new MaterialSkin.Controls.MaterialComboBox();
             this.bookListView = new MaterialSkin.Controls.MaterialListView();
             this.idListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.titleListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -65,12 +74,114 @@
             this.copiesListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.yearListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
+            this.tabPage5.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.credentialPage.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.dataPage.SuspendLayout();
             this.materialTabControl1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage5.Controls.Add(this.materialLabel4);
+            this.tabPage5.Controls.Add(this.loansHistoryListView);
+            this.tabPage5.Controls.Add(this.loadLoansBtn);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(786, 357);
+            this.tabPage5.TabIndex = 6;
+            this.tabPage5.Text = "Historial préstamos";
+            // 
+            // loadLoansBtn
+            // 
+            this.loadLoansBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.loadLoansBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.loadLoansBtn.Depth = 0;
+            this.loadLoansBtn.HighEmphasis = true;
+            this.loadLoansBtn.Icon = null;
+            this.loadLoansBtn.Location = new System.Drawing.Point(317, 315);
+            this.loadLoansBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.loadLoansBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.loadLoansBtn.Name = "loadLoansBtn";
+            this.loadLoansBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.loadLoansBtn.Size = new System.Drawing.Size(169, 36);
+            this.loadLoansBtn.TabIndex = 7;
+            this.loadLoansBtn.Text = "Cargar préstamos";
+            this.loadLoansBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.loadLoansBtn.UseAccentColor = false;
+            this.loadLoansBtn.UseVisualStyleBackColor = true;
+            this.loadLoansBtn.Click += new System.EventHandler(this.loadLoansBtn_Click_1);
+            // 
+            // loansHistoryListView
+            // 
+            this.loansHistoryListView.AutoSizeTable = false;
+            this.loansHistoryListView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.loansHistoryListView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.loansHistoryListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.idLoanListView,
+            this.bookLoanListView,
+            this.dateLoanListView,
+            this.dueDateLoanListView});
+            this.loansHistoryListView.Depth = 0;
+            this.loansHistoryListView.FullRowSelect = true;
+            this.loansHistoryListView.HideSelection = false;
+            this.loansHistoryListView.Location = new System.Drawing.Point(-4, 62);
+            this.loansHistoryListView.MinimumSize = new System.Drawing.Size(200, 100);
+            this.loansHistoryListView.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.loansHistoryListView.MouseState = MaterialSkin.MouseState.OUT;
+            this.loansHistoryListView.Name = "loansHistoryListView";
+            this.loansHistoryListView.OwnerDraw = true;
+            this.loansHistoryListView.Size = new System.Drawing.Size(802, 229);
+            this.loansHistoryListView.TabIndex = 8;
+            this.loansHistoryListView.UseCompatibleStateImageBehavior = false;
+            this.loansHistoryListView.View = System.Windows.Forms.View.Details;
+            // 
+            // idLoanListView
+            // 
+            this.idLoanListView.Text = "ID";
+            this.idLoanListView.Width = 100;
+            // 
+            // bookLoanListView
+            // 
+            this.bookLoanListView.Text = "Nombre del libro";
+            this.bookLoanListView.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bookLoanListView.Width = 300;
+            // 
+            // dateLoanListView
+            // 
+            this.dateLoanListView.Text = "Fecha préstamo";
+            this.dateLoanListView.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.dateLoanListView.Width = 200;
+            // 
+            // dueDateLoanListView
+            // 
+            this.dueDateLoanListView.Text = "Fecha devolución";
+            this.dueDateLoanListView.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.dueDateLoanListView.Width = 200;
+            // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel4.Location = new System.Drawing.Point(294, 16);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(202, 19);
+            this.materialLabel4.TabIndex = 9;
+            this.materialLabel4.Text = "HISTORIAL DE PRÉSTAMOS";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(786, 357);
+            this.tabPage4.TabIndex = 5;
+            this.tabPage4.Text = "Consultar usuarios";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // tabPage1
             // 
@@ -86,6 +197,13 @@
             this.tabPage1.Size = new System.Drawing.Size(786, 357);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Registrar préstamo";
+            // 
+            // dueDateBook
+            // 
+            this.dueDateBook.Location = new System.Drawing.Point(246, 233);
+            this.dueDateBook.Name = "dueDateBook";
+            this.dueDateBook.Size = new System.Drawing.Size(281, 20);
+            this.dueDateBook.TabIndex = 6;
             // 
             // idUserBox
             // 
@@ -120,13 +238,6 @@
             this.idBookBox.TabIndex = 5;
             this.idBookBox.Text = "";
             this.idBookBox.TrailingIcon = null;
-            // 
-            // dueDateBook
-            // 
-            this.dueDateBook.Location = new System.Drawing.Point(246, 233);
-            this.dueDateBook.Name = "dueDateBook";
-            this.dueDateBook.Size = new System.Drawing.Size(281, 20);
-            this.dueDateBook.TabIndex = 6;
             // 
             // registerLoanBtn
             // 
@@ -304,6 +415,36 @@
             this.tabPage2.TabIndex = 3;
             this.tabPage2.Text = "Registrar libro";
             // 
+            // categoryBox
+            // 
+            this.categoryBox.AutoResize = false;
+            this.categoryBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.categoryBox.Depth = 0;
+            this.categoryBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.categoryBox.DropDownHeight = 174;
+            this.categoryBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.categoryBox.DropDownWidth = 121;
+            this.categoryBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.categoryBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.categoryBox.FormattingEnabled = true;
+            this.categoryBox.IntegralHeight = false;
+            this.categoryBox.ItemHeight = 43;
+            this.categoryBox.Items.AddRange(new object[] {
+            "CATEGORÍA",
+            "AVENTURAS",
+            "CIENCIA FICCIÓN",
+            "ROMANCE",
+            "FANTASÍA",
+            "NOVELA",
+            "CUENTO"});
+            this.categoryBox.Location = new System.Drawing.Point(439, 162);
+            this.categoryBox.MaxDropDownItems = 4;
+            this.categoryBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.categoryBox.Name = "categoryBox";
+            this.categoryBox.Size = new System.Drawing.Size(281, 49);
+            this.categoryBox.StartIndex = 0;
+            this.categoryBox.TabIndex = 5;
+            // 
             // titleBox
             // 
             this.titleBox.AnimateReadOnly = false;
@@ -337,36 +478,6 @@
             this.authorBox.TabIndex = 4;
             this.authorBox.Text = "";
             this.authorBox.TrailingIcon = null;
-            // 
-            // categoryBox
-            // 
-            this.categoryBox.AutoResize = false;
-            this.categoryBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.categoryBox.Depth = 0;
-            this.categoryBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.categoryBox.DropDownHeight = 174;
-            this.categoryBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.categoryBox.DropDownWidth = 121;
-            this.categoryBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.categoryBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.categoryBox.FormattingEnabled = true;
-            this.categoryBox.IntegralHeight = false;
-            this.categoryBox.ItemHeight = 43;
-            this.categoryBox.Items.AddRange(new object[] {
-            "CATEGORÍA",
-            "AVENTURAS",
-            "CIENCIA FICCIÓN",
-            "ROMANCE",
-            "FANTASÍA",
-            "NOVELA",
-            "CUENTO"});
-            this.categoryBox.Location = new System.Drawing.Point(439, 162);
-            this.categoryBox.MaxDropDownItems = 4;
-            this.categoryBox.MouseState = MaterialSkin.MouseState.OUT;
-            this.categoryBox.Name = "categoryBox";
-            this.categoryBox.Size = new System.Drawing.Size(281, 49);
-            this.categoryBox.StartIndex = 0;
-            this.categoryBox.TabIndex = 5;
             // 
             // copiesSlide
             // 
@@ -445,6 +556,36 @@
             this.dataPage.Size = new System.Drawing.Size(786, 357);
             this.dataPage.TabIndex = 0;
             this.dataPage.Text = "Buscar libro";
+            // 
+            // categorySearchBox
+            // 
+            this.categorySearchBox.AutoResize = false;
+            this.categorySearchBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.categorySearchBox.Depth = 0;
+            this.categorySearchBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.categorySearchBox.DropDownHeight = 174;
+            this.categorySearchBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.categorySearchBox.DropDownWidth = 121;
+            this.categorySearchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.categorySearchBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.categorySearchBox.FormattingEnabled = true;
+            this.categorySearchBox.IntegralHeight = false;
+            this.categorySearchBox.ItemHeight = 43;
+            this.categorySearchBox.Items.AddRange(new object[] {
+            "CATEGORÍA",
+            "AVENTURAS",
+            "CIENCIA FICCIÓN",
+            "ROMANCE",
+            "FANTASÍA",
+            "NOVELA",
+            "CUENTO"});
+            this.categorySearchBox.Location = new System.Drawing.Point(15, 258);
+            this.categorySearchBox.MaxDropDownItems = 4;
+            this.categorySearchBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.categorySearchBox.Name = "categorySearchBox";
+            this.categorySearchBox.Size = new System.Drawing.Size(214, 49);
+            this.categorySearchBox.StartIndex = 0;
+            this.categorySearchBox.TabIndex = 7;
             // 
             // titleSearchBox
             // 
@@ -540,36 +681,6 @@
             this.searchCategoryBtn.UseVisualStyleBackColor = true;
             this.searchCategoryBtn.Click += new System.EventHandler(this.searchCategoryBtn_Click);
             // 
-            // categorySearchBox
-            // 
-            this.categorySearchBox.AutoResize = false;
-            this.categorySearchBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.categorySearchBox.Depth = 0;
-            this.categorySearchBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.categorySearchBox.DropDownHeight = 174;
-            this.categorySearchBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.categorySearchBox.DropDownWidth = 121;
-            this.categorySearchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.categorySearchBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.categorySearchBox.FormattingEnabled = true;
-            this.categorySearchBox.IntegralHeight = false;
-            this.categorySearchBox.ItemHeight = 43;
-            this.categorySearchBox.Items.AddRange(new object[] {
-            "CATEGORÍA",
-            "AVENTURAS",
-            "CIENCIA FICCIÓN",
-            "ROMANCE",
-            "FANTASÍA",
-            "NOVELA",
-            "CUENTO"});
-            this.categorySearchBox.Location = new System.Drawing.Point(15, 258);
-            this.categorySearchBox.MaxDropDownItems = 4;
-            this.categorySearchBox.MouseState = MaterialSkin.MouseState.OUT;
-            this.categorySearchBox.Name = "categorySearchBox";
-            this.categorySearchBox.Size = new System.Drawing.Size(214, 49);
-            this.categorySearchBox.StartIndex = 0;
-            this.categorySearchBox.TabIndex = 7;
-            // 
             // bookListView
             // 
             this.bookListView.AutoSizeTable = false;
@@ -638,6 +749,8 @@
             this.materialTabControl1.Controls.Add(this.tabPage2);
             this.materialTabControl1.Controls.Add(this.credentialPage);
             this.materialTabControl1.Controls.Add(this.tabPage1);
+            this.materialTabControl1.Controls.Add(this.tabPage4);
+            this.materialTabControl1.Controls.Add(this.tabPage5);
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialTabControl1.Location = new System.Drawing.Point(3, 64);
@@ -659,6 +772,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfil: Bibliotecario";
             this.Load += new System.EventHandler(this.LibrarianForm_Load);
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.credentialPage.ResumeLayout(false);
@@ -674,6 +789,15 @@
 
         #endregion
 
+        private System.Windows.Forms.TabPage tabPage5;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private MaterialSkin.Controls.MaterialListView loansHistoryListView;
+        private System.Windows.Forms.ColumnHeader idLoanListView;
+        private System.Windows.Forms.ColumnHeader bookLoanListView;
+        private System.Windows.Forms.ColumnHeader dateLoanListView;
+        private System.Windows.Forms.ColumnHeader dueDateLoanListView;
+        private MaterialSkin.Controls.MaterialButton loadLoansBtn;
+        private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage1;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;

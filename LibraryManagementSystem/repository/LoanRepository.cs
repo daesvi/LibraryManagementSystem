@@ -31,6 +31,12 @@ namespace LibraryManagementSystem.repository
             dbContext.SaveChanges();
         }
 
+
+        public IEnumerable<Loan> GetLoansByUserId(long userId)
+        {
+            return dbContext.Loans.Where(loan => loan.UserIdentification == userId).ToList();
+        }
+
         public void Delete(int id)
         {
             var loanToDelete = dbContext.Loans.Find(id);
