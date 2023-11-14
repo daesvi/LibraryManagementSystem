@@ -29,43 +29,36 @@
         private void InitializeComponent()
         {
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.loadLoansBtn = new MaterialSkin.Controls.MaterialButton();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.loansHistoryListView = new MaterialSkin.Controls.MaterialListView();
             this.idLoanListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.bookLoanListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.dateLoanListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.dueDateLoanListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.loadLoansBtn = new MaterialSkin.Controls.MaterialButton();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.dueDateBook = new System.Windows.Forms.DateTimePicker();
-            this.idUserBox = new MaterialSkin.Controls.MaterialTextBox();
-            this.idBookBox = new MaterialSkin.Controls.MaterialTextBox();
-            this.registerLoanBtn = new MaterialSkin.Controls.MaterialButton();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.registerLoanBtn = new MaterialSkin.Controls.MaterialButton();
+            this.idBookBox = new MaterialSkin.Controls.MaterialTextBox();
+            this.idUserBox = new MaterialSkin.Controls.MaterialTextBox();
+            this.dueDateBook = new System.Windows.Forms.DateTimePicker();
             this.credentialPage = new System.Windows.Forms.TabPage();
-            this.titleBookBox = new MaterialSkin.Controls.MaterialTextBox();
-            this.authorBookBox = new MaterialSkin.Controls.MaterialTextBox();
-            this.copiesBookBox = new MaterialSkin.Controls.MaterialTextBox();
-            this.idBox = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.saveChangesBtn = new MaterialSkin.Controls.MaterialButton();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.idBox = new MaterialSkin.Controls.MaterialTextBox();
+            this.copiesBookBox = new MaterialSkin.Controls.MaterialTextBox();
+            this.authorBookBox = new MaterialSkin.Controls.MaterialTextBox();
+            this.titleBookBox = new MaterialSkin.Controls.MaterialTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.categoryBox = new MaterialSkin.Controls.MaterialComboBox();
-            this.titleBox = new MaterialSkin.Controls.MaterialTextBox();
-            this.authorBox = new MaterialSkin.Controls.MaterialTextBox();
-            this.copiesSlide = new MaterialSkin.Controls.MaterialSlider();
-            this.yearBox = new MaterialSkin.Controls.MaterialTextBox();
-            this.registerBookBtn = new MaterialSkin.Controls.MaterialButton();
             this.buscarTxt = new MaterialSkin.Controls.MaterialLabel();
+            this.registerBookBtn = new MaterialSkin.Controls.MaterialButton();
+            this.yearBox = new MaterialSkin.Controls.MaterialTextBox();
+            this.copiesSlide = new MaterialSkin.Controls.MaterialSlider();
+            this.authorBox = new MaterialSkin.Controls.MaterialTextBox();
+            this.titleBox = new MaterialSkin.Controls.MaterialTextBox();
+            this.categoryBox = new MaterialSkin.Controls.MaterialComboBox();
             this.dataPage = new System.Windows.Forms.TabPage();
-            this.categorySearchBox = new MaterialSkin.Controls.MaterialComboBox();
-            this.titleSearchBox = new MaterialSkin.Controls.MaterialTextBox();
-            this.authorSearchBox = new MaterialSkin.Controls.MaterialTextBox();
-            this.searchTitleBtn = new MaterialSkin.Controls.MaterialButton();
-            this.searchAuthorBtn = new MaterialSkin.Controls.MaterialButton();
-            this.searchCategoryBtn = new MaterialSkin.Controls.MaterialButton();
             this.bookListView = new MaterialSkin.Controls.MaterialListView();
             this.idListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.titleListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -73,13 +66,31 @@
             this.categoryListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.copiesListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.yearListView = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.searchCategoryBtn = new MaterialSkin.Controls.MaterialButton();
+            this.searchAuthorBtn = new MaterialSkin.Controls.MaterialButton();
+            this.searchTitleBtn = new MaterialSkin.Controls.MaterialButton();
+            this.authorSearchBox = new MaterialSkin.Controls.MaterialTextBox();
+            this.titleSearchBox = new MaterialSkin.Controls.MaterialTextBox();
+            this.categorySearchBox = new MaterialSkin.Controls.MaterialComboBox();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
+            this.usersListView = new MaterialSkin.Controls.MaterialListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.loadUsersBtn = new MaterialSkin.Controls.MaterialButton();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage5.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.credentialPage.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.dataPage.SuspendLayout();
             this.materialTabControl1.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPage5
@@ -94,25 +105,17 @@
             this.tabPage5.TabIndex = 6;
             this.tabPage5.Text = "Historial préstamos";
             // 
-            // loadLoansBtn
+            // materialLabel4
             // 
-            this.loadLoansBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.loadLoansBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.loadLoansBtn.Depth = 0;
-            this.loadLoansBtn.HighEmphasis = true;
-            this.loadLoansBtn.Icon = null;
-            this.loadLoansBtn.Location = new System.Drawing.Point(317, 315);
-            this.loadLoansBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.loadLoansBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.loadLoansBtn.Name = "loadLoansBtn";
-            this.loadLoansBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.loadLoansBtn.Size = new System.Drawing.Size(169, 36);
-            this.loadLoansBtn.TabIndex = 7;
-            this.loadLoansBtn.Text = "Cargar préstamos";
-            this.loadLoansBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.loadLoansBtn.UseAccentColor = false;
-            this.loadLoansBtn.UseVisualStyleBackColor = true;
-            this.loadLoansBtn.Click += new System.EventHandler(this.loadLoansBtn_Click_1);
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel4.Location = new System.Drawing.Point(294, 16);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(202, 19);
+            this.materialLabel4.TabIndex = 9;
+            this.materialLabel4.Text = "HISTORIAL DE PRÉSTAMOS";
             // 
             // loansHistoryListView
             // 
@@ -161,27 +164,25 @@
             this.dueDateLoanListView.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.dueDateLoanListView.Width = 200;
             // 
-            // materialLabel4
+            // loadLoansBtn
             // 
-            this.materialLabel4.AutoSize = true;
-            this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel4.Location = new System.Drawing.Point(294, 16);
-            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(202, 19);
-            this.materialLabel4.TabIndex = 9;
-            this.materialLabel4.Text = "HISTORIAL DE PRÉSTAMOS";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(786, 357);
-            this.tabPage4.TabIndex = 5;
-            this.tabPage4.Text = "Consultar usuarios";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.loadLoansBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.loadLoansBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.loadLoansBtn.Depth = 0;
+            this.loadLoansBtn.HighEmphasis = true;
+            this.loadLoansBtn.Icon = null;
+            this.loadLoansBtn.Location = new System.Drawing.Point(317, 315);
+            this.loadLoansBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.loadLoansBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.loadLoansBtn.Name = "loadLoansBtn";
+            this.loadLoansBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.loadLoansBtn.Size = new System.Drawing.Size(169, 36);
+            this.loadLoansBtn.TabIndex = 7;
+            this.loadLoansBtn.Text = "Cargar préstamos";
+            this.loadLoansBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.loadLoansBtn.UseAccentColor = false;
+            this.loadLoansBtn.UseVisualStyleBackColor = true;
+            this.loadLoansBtn.Click += new System.EventHandler(this.loadLoansBtn_Click_1);
             // 
             // tabPage1
             // 
@@ -198,46 +199,29 @@
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Registrar préstamo";
             // 
-            // dueDateBook
+            // materialLabel2
             // 
-            this.dueDateBook.Location = new System.Drawing.Point(246, 233);
-            this.dueDateBook.Name = "dueDateBook";
-            this.dueDateBook.Size = new System.Drawing.Size(281, 20);
-            this.dueDateBook.TabIndex = 6;
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel2.Location = new System.Drawing.Point(311, 191);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(150, 19);
+            this.materialLabel2.TabIndex = 14;
+            this.materialLabel2.Text = "Fecha de devolución:";
             // 
-            // idUserBox
+            // materialLabel1
             // 
-            this.idUserBox.AnimateReadOnly = false;
-            this.idUserBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.idUserBox.Depth = 0;
-            this.idUserBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.idUserBox.LeadingIcon = null;
-            this.idUserBox.Location = new System.Drawing.Point(424, 90);
-            this.idUserBox.MaxLength = 50;
-            this.idUserBox.MouseState = MaterialSkin.MouseState.OUT;
-            this.idUserBox.Multiline = false;
-            this.idUserBox.Name = "idUserBox";
-            this.idUserBox.Size = new System.Drawing.Size(281, 50);
-            this.idUserBox.TabIndex = 4;
-            this.idUserBox.Text = "";
-            this.idUserBox.TrailingIcon = null;
-            // 
-            // idBookBox
-            // 
-            this.idBookBox.AnimateReadOnly = false;
-            this.idBookBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.idBookBox.Depth = 0;
-            this.idBookBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.idBookBox.LeadingIcon = null;
-            this.idBookBox.Location = new System.Drawing.Point(67, 90);
-            this.idBookBox.MaxLength = 50;
-            this.idBookBox.MouseState = MaterialSkin.MouseState.OUT;
-            this.idBookBox.Multiline = false;
-            this.idBookBox.Name = "idBookBox";
-            this.idBookBox.Size = new System.Drawing.Size(281, 50);
-            this.idBookBox.TabIndex = 5;
-            this.idBookBox.Text = "";
-            this.idBookBox.TrailingIcon = null;
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Location = new System.Drawing.Point(293, 32);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(173, 19);
+            this.materialLabel1.TabIndex = 13;
+            this.materialLabel1.Text = "REGISTRAR PRÉSTAMO";
             // 
             // registerLoanBtn
             // 
@@ -259,29 +243,46 @@
             this.registerLoanBtn.UseVisualStyleBackColor = true;
             this.registerLoanBtn.Click += new System.EventHandler(this.registerLoanBtn_Click);
             // 
-            // materialLabel1
+            // idBookBox
             // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(293, 32);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(173, 19);
-            this.materialLabel1.TabIndex = 13;
-            this.materialLabel1.Text = "REGISTRAR PRÉSTAMO";
+            this.idBookBox.AnimateReadOnly = false;
+            this.idBookBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.idBookBox.Depth = 0;
+            this.idBookBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.idBookBox.LeadingIcon = null;
+            this.idBookBox.Location = new System.Drawing.Point(67, 90);
+            this.idBookBox.MaxLength = 50;
+            this.idBookBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.idBookBox.Multiline = false;
+            this.idBookBox.Name = "idBookBox";
+            this.idBookBox.Size = new System.Drawing.Size(281, 50);
+            this.idBookBox.TabIndex = 5;
+            this.idBookBox.Text = "";
+            this.idBookBox.TrailingIcon = null;
             // 
-            // materialLabel2
+            // idUserBox
             // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(311, 191);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(150, 19);
-            this.materialLabel2.TabIndex = 14;
-            this.materialLabel2.Text = "Fecha de devolución:";
+            this.idUserBox.AnimateReadOnly = false;
+            this.idUserBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.idUserBox.Depth = 0;
+            this.idUserBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.idUserBox.LeadingIcon = null;
+            this.idUserBox.Location = new System.Drawing.Point(424, 90);
+            this.idUserBox.MaxLength = 50;
+            this.idUserBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.idUserBox.Multiline = false;
+            this.idUserBox.Name = "idUserBox";
+            this.idUserBox.Size = new System.Drawing.Size(281, 50);
+            this.idUserBox.TabIndex = 4;
+            this.idUserBox.Text = "";
+            this.idUserBox.TrailingIcon = null;
+            // 
+            // dueDateBook
+            // 
+            this.dueDateBook.Location = new System.Drawing.Point(246, 233);
+            this.dueDateBook.Name = "dueDateBook";
+            this.dueDateBook.Size = new System.Drawing.Size(281, 20);
+            this.dueDateBook.TabIndex = 6;
             // 
             // credentialPage
             // 
@@ -298,86 +299,6 @@
             this.credentialPage.Size = new System.Drawing.Size(786, 357);
             this.credentialPage.TabIndex = 1;
             this.credentialPage.Text = "Modificar libro";
-            // 
-            // titleBookBox
-            // 
-            this.titleBookBox.AnimateReadOnly = false;
-            this.titleBookBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.titleBookBox.Depth = 0;
-            this.titleBookBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.titleBookBox.LeadingIcon = null;
-            this.titleBookBox.Location = new System.Drawing.Point(49, 178);
-            this.titleBookBox.MaxLength = 50;
-            this.titleBookBox.MouseState = MaterialSkin.MouseState.OUT;
-            this.titleBookBox.Multiline = false;
-            this.titleBookBox.Name = "titleBookBox";
-            this.titleBookBox.Size = new System.Drawing.Size(184, 50);
-            this.titleBookBox.TabIndex = 0;
-            this.titleBookBox.Text = "";
-            this.titleBookBox.TrailingIcon = null;
-            // 
-            // authorBookBox
-            // 
-            this.authorBookBox.AnimateReadOnly = false;
-            this.authorBookBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.authorBookBox.Depth = 0;
-            this.authorBookBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.authorBookBox.LeadingIcon = null;
-            this.authorBookBox.Location = new System.Drawing.Point(534, 178);
-            this.authorBookBox.MaxLength = 50;
-            this.authorBookBox.MouseState = MaterialSkin.MouseState.OUT;
-            this.authorBookBox.Multiline = false;
-            this.authorBookBox.Name = "authorBookBox";
-            this.authorBookBox.Size = new System.Drawing.Size(184, 50);
-            this.authorBookBox.TabIndex = 1;
-            this.authorBookBox.Text = "";
-            this.authorBookBox.TrailingIcon = null;
-            // 
-            // copiesBookBox
-            // 
-            this.copiesBookBox.AnimateReadOnly = false;
-            this.copiesBookBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.copiesBookBox.Depth = 0;
-            this.copiesBookBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.copiesBookBox.LeadingIcon = null;
-            this.copiesBookBox.Location = new System.Drawing.Point(291, 178);
-            this.copiesBookBox.MaxLength = 50;
-            this.copiesBookBox.MouseState = MaterialSkin.MouseState.OUT;
-            this.copiesBookBox.Multiline = false;
-            this.copiesBookBox.Name = "copiesBookBox";
-            this.copiesBookBox.Size = new System.Drawing.Size(184, 50);
-            this.copiesBookBox.TabIndex = 2;
-            this.copiesBookBox.Text = "";
-            this.copiesBookBox.TrailingIcon = null;
-            // 
-            // idBox
-            // 
-            this.idBox.AnimateReadOnly = false;
-            this.idBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.idBox.Depth = 0;
-            this.idBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.idBox.LeadingIcon = null;
-            this.idBox.Location = new System.Drawing.Point(275, 80);
-            this.idBox.MaxLength = 50;
-            this.idBox.MouseState = MaterialSkin.MouseState.OUT;
-            this.idBox.Multiline = false;
-            this.idBox.Name = "idBox";
-            this.idBox.Size = new System.Drawing.Size(216, 50);
-            this.idBox.TabIndex = 3;
-            this.idBox.Text = "";
-            this.idBox.TrailingIcon = null;
-            // 
-            // materialLabel3
-            // 
-            this.materialLabel3.AutoSize = true;
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(310, 21);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(142, 19);
-            this.materialLabel3.TabIndex = 4;
-            this.materialLabel3.Text = "ACTUALIZAR LIBRO";
             // 
             // saveChangesBtn
             // 
@@ -399,6 +320,86 @@
             this.saveChangesBtn.UseVisualStyleBackColor = true;
             this.saveChangesBtn.Click += new System.EventHandler(this.saveChangesBtn_Click);
             // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel3.Location = new System.Drawing.Point(310, 21);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(142, 19);
+            this.materialLabel3.TabIndex = 4;
+            this.materialLabel3.Text = "ACTUALIZAR LIBRO";
+            // 
+            // idBox
+            // 
+            this.idBox.AnimateReadOnly = false;
+            this.idBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.idBox.Depth = 0;
+            this.idBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.idBox.LeadingIcon = null;
+            this.idBox.Location = new System.Drawing.Point(275, 80);
+            this.idBox.MaxLength = 50;
+            this.idBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.idBox.Multiline = false;
+            this.idBox.Name = "idBox";
+            this.idBox.Size = new System.Drawing.Size(216, 50);
+            this.idBox.TabIndex = 3;
+            this.idBox.Text = "";
+            this.idBox.TrailingIcon = null;
+            // 
+            // copiesBookBox
+            // 
+            this.copiesBookBox.AnimateReadOnly = false;
+            this.copiesBookBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.copiesBookBox.Depth = 0;
+            this.copiesBookBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.copiesBookBox.LeadingIcon = null;
+            this.copiesBookBox.Location = new System.Drawing.Point(291, 178);
+            this.copiesBookBox.MaxLength = 50;
+            this.copiesBookBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.copiesBookBox.Multiline = false;
+            this.copiesBookBox.Name = "copiesBookBox";
+            this.copiesBookBox.Size = new System.Drawing.Size(184, 50);
+            this.copiesBookBox.TabIndex = 2;
+            this.copiesBookBox.Text = "";
+            this.copiesBookBox.TrailingIcon = null;
+            // 
+            // authorBookBox
+            // 
+            this.authorBookBox.AnimateReadOnly = false;
+            this.authorBookBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.authorBookBox.Depth = 0;
+            this.authorBookBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.authorBookBox.LeadingIcon = null;
+            this.authorBookBox.Location = new System.Drawing.Point(534, 178);
+            this.authorBookBox.MaxLength = 50;
+            this.authorBookBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.authorBookBox.Multiline = false;
+            this.authorBookBox.Name = "authorBookBox";
+            this.authorBookBox.Size = new System.Drawing.Size(184, 50);
+            this.authorBookBox.TabIndex = 1;
+            this.authorBookBox.Text = "";
+            this.authorBookBox.TrailingIcon = null;
+            // 
+            // titleBookBox
+            // 
+            this.titleBookBox.AnimateReadOnly = false;
+            this.titleBookBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.titleBookBox.Depth = 0;
+            this.titleBookBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.titleBookBox.LeadingIcon = null;
+            this.titleBookBox.Location = new System.Drawing.Point(49, 178);
+            this.titleBookBox.MaxLength = 50;
+            this.titleBookBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.titleBookBox.Multiline = false;
+            this.titleBookBox.Name = "titleBookBox";
+            this.titleBookBox.Size = new System.Drawing.Size(184, 50);
+            this.titleBookBox.TabIndex = 0;
+            this.titleBookBox.Text = "";
+            this.titleBookBox.TrailingIcon = null;
+            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
@@ -414,6 +415,101 @@
             this.tabPage2.Size = new System.Drawing.Size(786, 357);
             this.tabPage2.TabIndex = 3;
             this.tabPage2.Text = "Registrar libro";
+            // 
+            // buscarTxt
+            // 
+            this.buscarTxt.AutoSize = true;
+            this.buscarTxt.Depth = 0;
+            this.buscarTxt.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.buscarTxt.Location = new System.Drawing.Point(325, 21);
+            this.buscarTxt.MouseState = MaterialSkin.MouseState.HOVER;
+            this.buscarTxt.Name = "buscarTxt";
+            this.buscarTxt.Size = new System.Drawing.Size(133, 19);
+            this.buscarTxt.TabIndex = 13;
+            this.buscarTxt.Text = "REGISTRAR LIBRO";
+            // 
+            // registerBookBtn
+            // 
+            this.registerBookBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.registerBookBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.registerBookBtn.Depth = 0;
+            this.registerBookBtn.HighEmphasis = true;
+            this.registerBookBtn.Icon = null;
+            this.registerBookBtn.Location = new System.Drawing.Point(328, 325);
+            this.registerBookBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.registerBookBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.registerBookBtn.Name = "registerBookBtn";
+            this.registerBookBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.registerBookBtn.Size = new System.Drawing.Size(143, 36);
+            this.registerBookBtn.TabIndex = 8;
+            this.registerBookBtn.Text = "Registrar libro";
+            this.registerBookBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.registerBookBtn.UseAccentColor = false;
+            this.registerBookBtn.UseVisualStyleBackColor = true;
+            this.registerBookBtn.Click += new System.EventHandler(this.registerBookBtn_Click);
+            // 
+            // yearBox
+            // 
+            this.yearBox.AnimateReadOnly = false;
+            this.yearBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.yearBox.Depth = 0;
+            this.yearBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.yearBox.LeadingIcon = null;
+            this.yearBox.Location = new System.Drawing.Point(439, 66);
+            this.yearBox.MaxLength = 50;
+            this.yearBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.yearBox.Multiline = false;
+            this.yearBox.Name = "yearBox";
+            this.yearBox.Size = new System.Drawing.Size(281, 50);
+            this.yearBox.TabIndex = 7;
+            this.yearBox.Text = "";
+            this.yearBox.TrailingIcon = null;
+            // 
+            // copiesSlide
+            // 
+            this.copiesSlide.Depth = 0;
+            this.copiesSlide.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.copiesSlide.Location = new System.Drawing.Point(239, 246);
+            this.copiesSlide.MouseState = MaterialSkin.MouseState.HOVER;
+            this.copiesSlide.Name = "copiesSlide";
+            this.copiesSlide.Size = new System.Drawing.Size(325, 40);
+            this.copiesSlide.TabIndex = 6;
+            this.copiesSlide.Text = "Numero de copias";
+            this.copiesSlide.Value = 0;
+            // 
+            // authorBox
+            // 
+            this.authorBox.AnimateReadOnly = false;
+            this.authorBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.authorBox.Depth = 0;
+            this.authorBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.authorBox.LeadingIcon = null;
+            this.authorBox.Location = new System.Drawing.Point(63, 163);
+            this.authorBox.MaxLength = 50;
+            this.authorBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.authorBox.Multiline = false;
+            this.authorBox.Name = "authorBox";
+            this.authorBox.Size = new System.Drawing.Size(281, 50);
+            this.authorBox.TabIndex = 4;
+            this.authorBox.Text = "";
+            this.authorBox.TrailingIcon = null;
+            // 
+            // titleBox
+            // 
+            this.titleBox.AnimateReadOnly = false;
+            this.titleBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.titleBox.Depth = 0;
+            this.titleBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.titleBox.LeadingIcon = null;
+            this.titleBox.Location = new System.Drawing.Point(63, 66);
+            this.titleBox.MaxLength = 50;
+            this.titleBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.titleBox.Multiline = false;
+            this.titleBox.Name = "titleBox";
+            this.titleBox.Size = new System.Drawing.Size(281, 50);
+            this.titleBox.TabIndex = 3;
+            this.titleBox.Text = "";
+            this.titleBox.TrailingIcon = null;
             // 
             // categoryBox
             // 
@@ -445,101 +541,6 @@
             this.categoryBox.StartIndex = 0;
             this.categoryBox.TabIndex = 5;
             // 
-            // titleBox
-            // 
-            this.titleBox.AnimateReadOnly = false;
-            this.titleBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.titleBox.Depth = 0;
-            this.titleBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.titleBox.LeadingIcon = null;
-            this.titleBox.Location = new System.Drawing.Point(63, 66);
-            this.titleBox.MaxLength = 50;
-            this.titleBox.MouseState = MaterialSkin.MouseState.OUT;
-            this.titleBox.Multiline = false;
-            this.titleBox.Name = "titleBox";
-            this.titleBox.Size = new System.Drawing.Size(281, 50);
-            this.titleBox.TabIndex = 3;
-            this.titleBox.Text = "";
-            this.titleBox.TrailingIcon = null;
-            // 
-            // authorBox
-            // 
-            this.authorBox.AnimateReadOnly = false;
-            this.authorBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.authorBox.Depth = 0;
-            this.authorBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.authorBox.LeadingIcon = null;
-            this.authorBox.Location = new System.Drawing.Point(63, 163);
-            this.authorBox.MaxLength = 50;
-            this.authorBox.MouseState = MaterialSkin.MouseState.OUT;
-            this.authorBox.Multiline = false;
-            this.authorBox.Name = "authorBox";
-            this.authorBox.Size = new System.Drawing.Size(281, 50);
-            this.authorBox.TabIndex = 4;
-            this.authorBox.Text = "";
-            this.authorBox.TrailingIcon = null;
-            // 
-            // copiesSlide
-            // 
-            this.copiesSlide.Depth = 0;
-            this.copiesSlide.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.copiesSlide.Location = new System.Drawing.Point(239, 246);
-            this.copiesSlide.MouseState = MaterialSkin.MouseState.HOVER;
-            this.copiesSlide.Name = "copiesSlide";
-            this.copiesSlide.Size = new System.Drawing.Size(325, 40);
-            this.copiesSlide.TabIndex = 6;
-            this.copiesSlide.Text = "Numero de copias";
-            this.copiesSlide.Value = 0;
-            // 
-            // yearBox
-            // 
-            this.yearBox.AnimateReadOnly = false;
-            this.yearBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.yearBox.Depth = 0;
-            this.yearBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.yearBox.LeadingIcon = null;
-            this.yearBox.Location = new System.Drawing.Point(439, 66);
-            this.yearBox.MaxLength = 50;
-            this.yearBox.MouseState = MaterialSkin.MouseState.OUT;
-            this.yearBox.Multiline = false;
-            this.yearBox.Name = "yearBox";
-            this.yearBox.Size = new System.Drawing.Size(281, 50);
-            this.yearBox.TabIndex = 7;
-            this.yearBox.Text = "";
-            this.yearBox.TrailingIcon = null;
-            // 
-            // registerBookBtn
-            // 
-            this.registerBookBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.registerBookBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.registerBookBtn.Depth = 0;
-            this.registerBookBtn.HighEmphasis = true;
-            this.registerBookBtn.Icon = null;
-            this.registerBookBtn.Location = new System.Drawing.Point(328, 325);
-            this.registerBookBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.registerBookBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.registerBookBtn.Name = "registerBookBtn";
-            this.registerBookBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.registerBookBtn.Size = new System.Drawing.Size(143, 36);
-            this.registerBookBtn.TabIndex = 8;
-            this.registerBookBtn.Text = "Registrar libro";
-            this.registerBookBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.registerBookBtn.UseAccentColor = false;
-            this.registerBookBtn.UseVisualStyleBackColor = true;
-            this.registerBookBtn.Click += new System.EventHandler(this.registerBookBtn_Click);
-            // 
-            // buscarTxt
-            // 
-            this.buscarTxt.AutoSize = true;
-            this.buscarTxt.Depth = 0;
-            this.buscarTxt.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.buscarTxt.Location = new System.Drawing.Point(325, 21);
-            this.buscarTxt.MouseState = MaterialSkin.MouseState.HOVER;
-            this.buscarTxt.Name = "buscarTxt";
-            this.buscarTxt.Size = new System.Drawing.Size(133, 19);
-            this.buscarTxt.TabIndex = 13;
-            this.buscarTxt.Text = "REGISTRAR LIBRO";
-            // 
             // dataPage
             // 
             this.dataPage.BackColor = System.Drawing.SystemColors.Control;
@@ -556,130 +557,6 @@
             this.dataPage.Size = new System.Drawing.Size(786, 357);
             this.dataPage.TabIndex = 0;
             this.dataPage.Text = "Buscar libro";
-            // 
-            // categorySearchBox
-            // 
-            this.categorySearchBox.AutoResize = false;
-            this.categorySearchBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.categorySearchBox.Depth = 0;
-            this.categorySearchBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.categorySearchBox.DropDownHeight = 174;
-            this.categorySearchBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.categorySearchBox.DropDownWidth = 121;
-            this.categorySearchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.categorySearchBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.categorySearchBox.FormattingEnabled = true;
-            this.categorySearchBox.IntegralHeight = false;
-            this.categorySearchBox.ItemHeight = 43;
-            this.categorySearchBox.Items.AddRange(new object[] {
-            "CATEGORÍA",
-            "AVENTURAS",
-            "CIENCIA FICCIÓN",
-            "ROMANCE",
-            "FANTASÍA",
-            "NOVELA",
-            "CUENTO"});
-            this.categorySearchBox.Location = new System.Drawing.Point(15, 258);
-            this.categorySearchBox.MaxDropDownItems = 4;
-            this.categorySearchBox.MouseState = MaterialSkin.MouseState.OUT;
-            this.categorySearchBox.Name = "categorySearchBox";
-            this.categorySearchBox.Size = new System.Drawing.Size(214, 49);
-            this.categorySearchBox.StartIndex = 0;
-            this.categorySearchBox.TabIndex = 7;
-            // 
-            // titleSearchBox
-            // 
-            this.titleSearchBox.AnimateReadOnly = false;
-            this.titleSearchBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.titleSearchBox.Depth = 0;
-            this.titleSearchBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.titleSearchBox.LeadingIcon = null;
-            this.titleSearchBox.Location = new System.Drawing.Point(15, 19);
-            this.titleSearchBox.MaxLength = 50;
-            this.titleSearchBox.MouseState = MaterialSkin.MouseState.OUT;
-            this.titleSearchBox.Multiline = false;
-            this.titleSearchBox.Name = "titleSearchBox";
-            this.titleSearchBox.Size = new System.Drawing.Size(214, 50);
-            this.titleSearchBox.TabIndex = 0;
-            this.titleSearchBox.Text = "";
-            this.titleSearchBox.TrailingIcon = null;
-            // 
-            // authorSearchBox
-            // 
-            this.authorSearchBox.AnimateReadOnly = false;
-            this.authorSearchBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.authorSearchBox.Depth = 0;
-            this.authorSearchBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.authorSearchBox.LeadingIcon = null;
-            this.authorSearchBox.Location = new System.Drawing.Point(15, 142);
-            this.authorSearchBox.MaxLength = 50;
-            this.authorSearchBox.MouseState = MaterialSkin.MouseState.OUT;
-            this.authorSearchBox.Multiline = false;
-            this.authorSearchBox.Name = "authorSearchBox";
-            this.authorSearchBox.Size = new System.Drawing.Size(214, 50);
-            this.authorSearchBox.TabIndex = 1;
-            this.authorSearchBox.Text = "";
-            this.authorSearchBox.TrailingIcon = null;
-            // 
-            // searchTitleBtn
-            // 
-            this.searchTitleBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.searchTitleBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.searchTitleBtn.Depth = 0;
-            this.searchTitleBtn.HighEmphasis = true;
-            this.searchTitleBtn.Icon = null;
-            this.searchTitleBtn.Location = new System.Drawing.Point(77, 78);
-            this.searchTitleBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.searchTitleBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.searchTitleBtn.Name = "searchTitleBtn";
-            this.searchTitleBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.searchTitleBtn.Size = new System.Drawing.Size(77, 36);
-            this.searchTitleBtn.TabIndex = 4;
-            this.searchTitleBtn.Text = "Buscar";
-            this.searchTitleBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.searchTitleBtn.UseAccentColor = false;
-            this.searchTitleBtn.UseVisualStyleBackColor = true;
-            this.searchTitleBtn.Click += new System.EventHandler(this.searchTitleBtn_Click);
-            // 
-            // searchAuthorBtn
-            // 
-            this.searchAuthorBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.searchAuthorBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.searchAuthorBtn.Depth = 0;
-            this.searchAuthorBtn.HighEmphasis = true;
-            this.searchAuthorBtn.Icon = null;
-            this.searchAuthorBtn.Location = new System.Drawing.Point(77, 201);
-            this.searchAuthorBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.searchAuthorBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.searchAuthorBtn.Name = "searchAuthorBtn";
-            this.searchAuthorBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.searchAuthorBtn.Size = new System.Drawing.Size(77, 36);
-            this.searchAuthorBtn.TabIndex = 5;
-            this.searchAuthorBtn.Text = "Buscar";
-            this.searchAuthorBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.searchAuthorBtn.UseAccentColor = false;
-            this.searchAuthorBtn.UseVisualStyleBackColor = true;
-            this.searchAuthorBtn.Click += new System.EventHandler(this.searchAuthorBtn_Click);
-            // 
-            // searchCategoryBtn
-            // 
-            this.searchCategoryBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.searchCategoryBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.searchCategoryBtn.Depth = 0;
-            this.searchCategoryBtn.HighEmphasis = true;
-            this.searchCategoryBtn.Icon = null;
-            this.searchCategoryBtn.Location = new System.Drawing.Point(77, 316);
-            this.searchCategoryBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.searchCategoryBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.searchCategoryBtn.Name = "searchCategoryBtn";
-            this.searchCategoryBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.searchCategoryBtn.Size = new System.Drawing.Size(77, 36);
-            this.searchCategoryBtn.TabIndex = 6;
-            this.searchCategoryBtn.Text = "Buscar";
-            this.searchCategoryBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.searchCategoryBtn.UseAccentColor = false;
-            this.searchCategoryBtn.UseVisualStyleBackColor = true;
-            this.searchCategoryBtn.Click += new System.EventHandler(this.searchCategoryBtn_Click);
             // 
             // bookListView
             // 
@@ -743,14 +620,138 @@
             this.yearListView.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.yearListView.Width = 70;
             // 
+            // searchCategoryBtn
+            // 
+            this.searchCategoryBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.searchCategoryBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.searchCategoryBtn.Depth = 0;
+            this.searchCategoryBtn.HighEmphasis = true;
+            this.searchCategoryBtn.Icon = null;
+            this.searchCategoryBtn.Location = new System.Drawing.Point(77, 316);
+            this.searchCategoryBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.searchCategoryBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.searchCategoryBtn.Name = "searchCategoryBtn";
+            this.searchCategoryBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.searchCategoryBtn.Size = new System.Drawing.Size(77, 36);
+            this.searchCategoryBtn.TabIndex = 6;
+            this.searchCategoryBtn.Text = "Buscar";
+            this.searchCategoryBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.searchCategoryBtn.UseAccentColor = false;
+            this.searchCategoryBtn.UseVisualStyleBackColor = true;
+            this.searchCategoryBtn.Click += new System.EventHandler(this.searchCategoryBtn_Click);
+            // 
+            // searchAuthorBtn
+            // 
+            this.searchAuthorBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.searchAuthorBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.searchAuthorBtn.Depth = 0;
+            this.searchAuthorBtn.HighEmphasis = true;
+            this.searchAuthorBtn.Icon = null;
+            this.searchAuthorBtn.Location = new System.Drawing.Point(77, 201);
+            this.searchAuthorBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.searchAuthorBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.searchAuthorBtn.Name = "searchAuthorBtn";
+            this.searchAuthorBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.searchAuthorBtn.Size = new System.Drawing.Size(77, 36);
+            this.searchAuthorBtn.TabIndex = 5;
+            this.searchAuthorBtn.Text = "Buscar";
+            this.searchAuthorBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.searchAuthorBtn.UseAccentColor = false;
+            this.searchAuthorBtn.UseVisualStyleBackColor = true;
+            this.searchAuthorBtn.Click += new System.EventHandler(this.searchAuthorBtn_Click);
+            // 
+            // searchTitleBtn
+            // 
+            this.searchTitleBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.searchTitleBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.searchTitleBtn.Depth = 0;
+            this.searchTitleBtn.HighEmphasis = true;
+            this.searchTitleBtn.Icon = null;
+            this.searchTitleBtn.Location = new System.Drawing.Point(77, 78);
+            this.searchTitleBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.searchTitleBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.searchTitleBtn.Name = "searchTitleBtn";
+            this.searchTitleBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.searchTitleBtn.Size = new System.Drawing.Size(77, 36);
+            this.searchTitleBtn.TabIndex = 4;
+            this.searchTitleBtn.Text = "Buscar";
+            this.searchTitleBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.searchTitleBtn.UseAccentColor = false;
+            this.searchTitleBtn.UseVisualStyleBackColor = true;
+            this.searchTitleBtn.Click += new System.EventHandler(this.searchTitleBtn_Click);
+            // 
+            // authorSearchBox
+            // 
+            this.authorSearchBox.AnimateReadOnly = false;
+            this.authorSearchBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.authorSearchBox.Depth = 0;
+            this.authorSearchBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.authorSearchBox.LeadingIcon = null;
+            this.authorSearchBox.Location = new System.Drawing.Point(15, 142);
+            this.authorSearchBox.MaxLength = 50;
+            this.authorSearchBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.authorSearchBox.Multiline = false;
+            this.authorSearchBox.Name = "authorSearchBox";
+            this.authorSearchBox.Size = new System.Drawing.Size(214, 50);
+            this.authorSearchBox.TabIndex = 1;
+            this.authorSearchBox.Text = "";
+            this.authorSearchBox.TrailingIcon = null;
+            // 
+            // titleSearchBox
+            // 
+            this.titleSearchBox.AnimateReadOnly = false;
+            this.titleSearchBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.titleSearchBox.Depth = 0;
+            this.titleSearchBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.titleSearchBox.LeadingIcon = null;
+            this.titleSearchBox.Location = new System.Drawing.Point(15, 19);
+            this.titleSearchBox.MaxLength = 50;
+            this.titleSearchBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.titleSearchBox.Multiline = false;
+            this.titleSearchBox.Name = "titleSearchBox";
+            this.titleSearchBox.Size = new System.Drawing.Size(214, 50);
+            this.titleSearchBox.TabIndex = 0;
+            this.titleSearchBox.Text = "";
+            this.titleSearchBox.TrailingIcon = null;
+            // 
+            // categorySearchBox
+            // 
+            this.categorySearchBox.AutoResize = false;
+            this.categorySearchBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.categorySearchBox.Depth = 0;
+            this.categorySearchBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.categorySearchBox.DropDownHeight = 174;
+            this.categorySearchBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.categorySearchBox.DropDownWidth = 121;
+            this.categorySearchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.categorySearchBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.categorySearchBox.FormattingEnabled = true;
+            this.categorySearchBox.IntegralHeight = false;
+            this.categorySearchBox.ItemHeight = 43;
+            this.categorySearchBox.Items.AddRange(new object[] {
+            "CATEGORÍA",
+            "AVENTURAS",
+            "CIENCIA FICCIÓN",
+            "ROMANCE",
+            "FANTASÍA",
+            "NOVELA",
+            "CUENTO"});
+            this.categorySearchBox.Location = new System.Drawing.Point(15, 258);
+            this.categorySearchBox.MaxDropDownItems = 4;
+            this.categorySearchBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.categorySearchBox.Name = "categorySearchBox";
+            this.categorySearchBox.Size = new System.Drawing.Size(214, 49);
+            this.categorySearchBox.StartIndex = 0;
+            this.categorySearchBox.TabIndex = 7;
+            // 
             // materialTabControl1
             // 
             this.materialTabControl1.Controls.Add(this.dataPage);
             this.materialTabControl1.Controls.Add(this.tabPage2);
             this.materialTabControl1.Controls.Add(this.credentialPage);
             this.materialTabControl1.Controls.Add(this.tabPage1);
-            this.materialTabControl1.Controls.Add(this.tabPage4);
             this.materialTabControl1.Controls.Add(this.tabPage5);
+            this.materialTabControl1.Controls.Add(this.tabPage3);
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialTabControl1.Location = new System.Drawing.Point(3, 64);
@@ -760,6 +761,115 @@
             this.materialTabControl1.SelectedIndex = 0;
             this.materialTabControl1.Size = new System.Drawing.Size(794, 383);
             this.materialTabControl1.TabIndex = 11;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage3.Controls.Add(this.materialLabel5);
+            this.tabPage3.Controls.Add(this.usersListView);
+            this.tabPage3.Controls.Add(this.loadUsersBtn);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(786, 357);
+            this.tabPage3.TabIndex = 7;
+            this.tabPage3.Text = "Consultar usuarios";
+            // 
+            // materialLabel5
+            // 
+            this.materialLabel5.AutoSize = true;
+            this.materialLabel5.Depth = 0;
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel5.Location = new System.Drawing.Point(245, 19);
+            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel5.Name = "materialLabel5";
+            this.materialLabel5.Size = new System.Drawing.Size(303, 19);
+            this.materialLabel5.TabIndex = 9;
+            this.materialLabel5.Text = "USUARIOS REGISTRADOS EN EL SISTEMA";
+            // 
+            // usersListView
+            // 
+            this.usersListView.AutoSizeTable = false;
+            this.usersListView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.usersListView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.usersListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7});
+            this.usersListView.Depth = 0;
+            this.usersListView.FullRowSelect = true;
+            this.usersListView.HideSelection = false;
+            this.usersListView.Location = new System.Drawing.Point(-4, 62);
+            this.usersListView.MinimumSize = new System.Drawing.Size(200, 100);
+            this.usersListView.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.usersListView.MouseState = MaterialSkin.MouseState.OUT;
+            this.usersListView.Name = "usersListView";
+            this.usersListView.OwnerDraw = true;
+            this.usersListView.Size = new System.Drawing.Size(802, 229);
+            this.usersListView.TabIndex = 8;
+            this.usersListView.UseCompatibleStateImageBehavior = false;
+            this.usersListView.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "ID";
+            this.columnHeader1.Width = 100;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Nombre";
+            this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader2.Width = 150;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Edad";
+            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader3.Width = 70;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Genero";
+            this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader4.Width = 115;
+            // 
+            // loadUsersBtn
+            // 
+            this.loadUsersBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.loadUsersBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.loadUsersBtn.Depth = 0;
+            this.loadUsersBtn.HighEmphasis = true;
+            this.loadUsersBtn.Icon = null;
+            this.loadUsersBtn.Location = new System.Drawing.Point(317, 315);
+            this.loadUsersBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.loadUsersBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.loadUsersBtn.Name = "loadUsersBtn";
+            this.loadUsersBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.loadUsersBtn.Size = new System.Drawing.Size(152, 36);
+            this.loadUsersBtn.TabIndex = 7;
+            this.loadUsersBtn.Text = "CARGAR USUARIOS";
+            this.loadUsersBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.loadUsersBtn.UseAccentColor = false;
+            this.loadUsersBtn.UseVisualStyleBackColor = true;
+            this.loadUsersBtn.Click += new System.EventHandler(this.loadUsersBtn_Click);
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Dirección";
+            this.columnHeader5.Width = 150;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Telefono";
+            this.columnHeader6.Width = 90;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Email";
+            this.columnHeader7.Width = 100;
             // 
             // LibrarianForm
             // 
@@ -783,6 +893,8 @@
             this.dataPage.ResumeLayout(false);
             this.dataPage.PerformLayout();
             this.materialTabControl1.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -797,7 +909,6 @@
         private System.Windows.Forms.ColumnHeader dateLoanListView;
         private System.Windows.Forms.ColumnHeader dueDateLoanListView;
         private MaterialSkin.Controls.MaterialButton loadLoansBtn;
-        private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage1;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
@@ -835,5 +946,16 @@
         private MaterialSkin.Controls.MaterialTextBox titleSearchBox;
         private MaterialSkin.Controls.MaterialComboBox categorySearchBox;
         private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
+        private System.Windows.Forms.TabPage tabPage3;
+        private MaterialSkin.Controls.MaterialLabel materialLabel5;
+        private MaterialSkin.Controls.MaterialListView usersListView;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private MaterialSkin.Controls.MaterialButton loadUsersBtn;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
     }
 }

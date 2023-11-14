@@ -368,5 +368,37 @@ namespace LibraryManagementSystem.ui
                 MessageBox.Show($"Error al cargar los préstamos: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void loadUsersBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Obtén la lista de todos los usuarios
+                IEnumerable<User> allUsers = userService.GetAll();
+
+                // Limpia el ListView antes de agregar nuevos elementos
+                usersListView.Items.Clear();
+
+                // Recorre la lista de usuarios y agrega cada uno al ListView
+                foreach (User user in allUsers)
+                {
+                    // Crea un ListViewItem con los detalles del usuario
+                    ListViewItem item = new ListViewItem(user.Identification.ToString());
+                    item.SubItems.Add(user.Name);
+                    item.SubItems.Add(user.Age.ToString());
+                    item.SubItems.Add(user.Gender);
+                    item.SubItems.Add(user.Address);
+                    item.SubItems.Add(user.PhoneNumber);
+                    item.SubItems.Add(user.Email);
+
+                    // Agrega el ListViewItem al ListView
+                    usersListView.Items.Add(item);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar los usuarios: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
