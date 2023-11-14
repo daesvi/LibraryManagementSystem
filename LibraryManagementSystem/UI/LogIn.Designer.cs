@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.idBox = new MaterialSkin.Controls.MaterialTextBox();
-            this.passwordBox = new MaterialSkin.Controls.MaterialTextBox();
+            this.passwordLogInBox = new MaterialSkin.Controls.MaterialTextBox();
             this.logInBtn = new MaterialSkin.Controls.MaterialButton();
             this.signUpBtn = new MaterialSkin.Controls.MaterialButton();
             this.eye2Picture = new System.Windows.Forms.PictureBox();
@@ -53,23 +53,23 @@
             this.idBox.Text = "";
             this.idBox.TrailingIcon = null;
             // 
-            // passwordBox
+            // passwordLogInBox
             // 
-            this.passwordBox.AnimateReadOnly = false;
-            this.passwordBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.passwordBox.Depth = 0;
-            this.passwordBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.passwordBox.LeadingIcon = null;
-            this.passwordBox.Location = new System.Drawing.Point(117, 218);
-            this.passwordBox.MaxLength = 50;
-            this.passwordBox.MouseState = MaterialSkin.MouseState.OUT;
-            this.passwordBox.Multiline = false;
-            this.passwordBox.Name = "passwordBox";
-            this.passwordBox.Password = true;
-            this.passwordBox.Size = new System.Drawing.Size(281, 50);
-            this.passwordBox.TabIndex = 3;
-            this.passwordBox.Text = "";
-            this.passwordBox.TrailingIcon = null;
+            this.passwordLogInBox.AnimateReadOnly = false;
+            this.passwordLogInBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.passwordLogInBox.Depth = 0;
+            this.passwordLogInBox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.passwordLogInBox.LeadingIcon = null;
+            this.passwordLogInBox.Location = new System.Drawing.Point(117, 218);
+            this.passwordLogInBox.MaxLength = 50;
+            this.passwordLogInBox.MouseState = MaterialSkin.MouseState.OUT;
+            this.passwordLogInBox.Multiline = false;
+            this.passwordLogInBox.Name = "passwordLogInBox";
+            this.passwordLogInBox.Password = true;
+            this.passwordLogInBox.Size = new System.Drawing.Size(281, 50);
+            this.passwordLogInBox.TabIndex = 3;
+            this.passwordLogInBox.Text = "";
+            this.passwordLogInBox.TrailingIcon = null;
             // 
             // logInBtn
             // 
@@ -130,7 +130,7 @@
             this.Controls.Add(this.eye2Picture);
             this.Controls.Add(this.signUpBtn);
             this.Controls.Add(this.logInBtn);
-            this.Controls.Add(this.passwordBox);
+            this.Controls.Add(this.passwordLogInBox);
             this.Controls.Add(this.idBox);
             this.Name = "LogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -145,7 +145,7 @@
         #endregion
 
         private MaterialSkin.Controls.MaterialTextBox idBox;
-        private MaterialSkin.Controls.MaterialTextBox passwordBox;
+        private MaterialSkin.Controls.MaterialTextBox passwordLogInBox;
         private MaterialSkin.Controls.MaterialButton logInBtn;
         private MaterialSkin.Controls.MaterialButton signUpBtn;
         private System.Windows.Forms.PictureBox eye2Picture;

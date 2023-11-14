@@ -20,10 +20,15 @@ namespace LibraryManagementSystem
     public partial class LogIn : MaterialForm
     {
         private readonly IUserService userService;
-        public LogIn(IUserService userService)
+        private readonly IBookService bookService;
+        private readonly ILoanService loanService;
+
+        public LogIn(IUserService userService, ILoanService loanService, IBookService bookService)
         {
             InitializeComponent();
             this.userService = userService;
+            this.bookService = bookService;
+            this.loanService = loanService;
 
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.ColorScheme = new ColorScheme(
@@ -33,7 +38,7 @@ namespace LibraryManagementSystem
             );
 
             idBox.Hint = "Número de identificación";
-            passwordBox.Hint = "Contraseña";
+            passwordLogInBox.Hint = "Contraseña";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -44,19 +49,19 @@ namespace LibraryManagementSystem
 
         private void eye2Picture_Click(object sender, EventArgs e)
         {
-            if (passwordBox.Password)
+            if (passwordLogInBox.Password)
             {
-                passwordBox.Hide();
-                passwordBox.Password = false;
+                passwordLogInBox.Hide();
+                passwordLogInBox.Password = false;
                 eye2Picture.Image = Properties.Resources.cerrado;
-                passwordBox.Show();
+                passwordLogInBox.Show();
             }
             else
             {
-                passwordBox.Hide();
-                passwordBox.Password = true;
+                passwordLogInBox.Hide();
+                passwordLogInBox.Password = true;
                 eye2Picture.Image = Properties.Resources.vista;
-                passwordBox.Show();
+                passwordLogInBox.Show();
             }
         }
 
@@ -64,7 +69,7 @@ namespace LibraryManagementSystem
         {
             // Open the registration form
             SignUp signUpForm = new SignUp(userService);
-            signUpForm.ShowDialog();
+            signUpForm.Show();
         }
 
         private void logInBtn_Click(object sender, EventArgs e)
@@ -72,7 +77,7 @@ namespace LibraryManagementSystem
             try
             {
                 long userId = long.Parse(idBox.Text);
-                string password = passwordBox.Text;
+                string password = passwordLogInBox.Text;
 
                 // Check if the username and password are valid
                 bool isValidLogin = userService.login(userId, password);
@@ -88,17 +93,15 @@ namespace LibraryManagementSystem
                         {
                             MessageBox.Show("Inicio de sesión exitoso.");
                             // Open the form UserForm
-                            /*
-                            UserForm userForm = new UserForm();
-                            userForm.ShowDialog();*/
+                            UserForm userForm = new UserForm(loanService, bookService, userId);
+                            userForm.ShowDialog();
                         }
                         else if (loggedInUser.Tipo == 2)
                         {
                             MessageBox.Show("Inicio de sesión exitoso.");
                             // Open the form LibrarianForm
-                            /*
-                            LibrarianForm librarianForm = new LibrarianForm();
-                            librarianForm.ShowDialog();*/
+                            LibrarianForm librarianForm = new LibrarianForm(bookService, userService, loanService);
+                            librarianForm.ShowDialog();
                         }
                     }
                 }
@@ -110,6 +113,10 @@ namespace LibraryManagementSystem
             catch (FormatException)
             {
                 MessageBox.Show("El ID de usuario no es válido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Se produjo un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

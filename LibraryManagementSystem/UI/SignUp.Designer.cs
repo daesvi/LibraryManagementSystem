@@ -40,12 +40,12 @@
             this.phoneBox = new MaterialSkin.Controls.MaterialTextBox();
             this.emailBox = new MaterialSkin.Controls.MaterialTextBox();
             this.credentialPage = new System.Windows.Forms.TabPage();
+            this.eye2Picture = new System.Windows.Forms.PictureBox();
+            this.eyePicture = new System.Windows.Forms.PictureBox();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.registerBtn = new MaterialSkin.Controls.MaterialButton();
             this.passwordBox2 = new MaterialSkin.Controls.MaterialTextBox();
             this.passwordBox = new MaterialSkin.Controls.MaterialTextBox();
-            this.eye2Picture = new System.Windows.Forms.PictureBox();
-            this.eyePicture = new System.Windows.Forms.PictureBox();
             this.materialTabControl1.SuspendLayout();
             this.dataPage.SuspendLayout();
             this.credentialPage.SuspendLayout();
@@ -256,6 +256,28 @@
             this.credentialPage.TabIndex = 1;
             this.credentialPage.Text = "Credenciales";
             // 
+            // eye2Picture
+            // 
+            this.eye2Picture.Image = global::LibraryManagementSystem.Properties.Resources.vista;
+            this.eye2Picture.Location = new System.Drawing.Point(380, 182);
+            this.eye2Picture.Name = "eye2Picture";
+            this.eye2Picture.Size = new System.Drawing.Size(71, 40);
+            this.eye2Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.eye2Picture.TabIndex = 9;
+            this.eye2Picture.TabStop = false;
+            this.eye2Picture.Click += new System.EventHandler(this.eye2Picture_Click);
+            // 
+            // eyePicture
+            // 
+            this.eyePicture.Image = global::LibraryManagementSystem.Properties.Resources.vista;
+            this.eyePicture.Location = new System.Drawing.Point(380, 82);
+            this.eyePicture.Name = "eyePicture";
+            this.eyePicture.Size = new System.Drawing.Size(71, 40);
+            this.eyePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.eyePicture.TabIndex = 8;
+            this.eyePicture.TabStop = false;
+            this.eyePicture.Click += new System.EventHandler(this.eyePicture_Click);
+            // 
             // materialLabel2
             // 
             this.materialLabel2.AutoSize = true;
@@ -324,28 +346,6 @@
             this.passwordBox.Text = "";
             this.passwordBox.TrailingIcon = null;
             // 
-            // eye2Picture
-            // 
-            this.eye2Picture.Image = global::LibraryManagementSystem.Properties.Resources.vista;
-            this.eye2Picture.Location = new System.Drawing.Point(380, 182);
-            this.eye2Picture.Name = "eye2Picture";
-            this.eye2Picture.Size = new System.Drawing.Size(71, 40);
-            this.eye2Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.eye2Picture.TabIndex = 9;
-            this.eye2Picture.TabStop = false;
-            this.eye2Picture.Click += new System.EventHandler(this.eye2Picture_Click);
-            // 
-            // eyePicture
-            // 
-            this.eyePicture.Image = global::LibraryManagementSystem.Properties.Resources.vista;
-            this.eyePicture.Location = new System.Drawing.Point(380, 82);
-            this.eyePicture.Name = "eyePicture";
-            this.eyePicture.Size = new System.Drawing.Size(71, 40);
-            this.eyePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.eyePicture.TabIndex = 8;
-            this.eyePicture.TabStop = false;
-            this.eyePicture.Click += new System.EventHandler(this.eyePicture_Click);
-            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -357,6 +357,7 @@
             this.Name = "SignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SignUp_FormClosed);
             this.Load += new System.EventHandler(this.SignUp_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.dataPage.ResumeLayout(false);

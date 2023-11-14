@@ -32,8 +32,7 @@ namespace LibraryManagementSystem
             ILoanRepository loanRepository = new LoanRepository(libraryContext);
             ILoanService loanService = new LoanService(loanRepository);
 
-            Application.Run(new LibrarianForm(bookService, userService, loanService));
-            //Application.Run(new UserForm(loanService, bookService));
+            Application.Run(new LogIn(userService, loanService, bookService));
         }
     }
 }

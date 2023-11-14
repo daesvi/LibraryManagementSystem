@@ -19,12 +19,13 @@ namespace LibraryManagementSystem.ui
         private readonly ILoanService loanService;
         private readonly IBookService bookService;
         long userId;
-        public UserForm(ILoanService loanService /*,long userId*/, IBookService bookService)
+
+        public UserForm(ILoanService loanService , IBookService bookService, long userId)
         {
             InitializeComponent();
             this.loanService = loanService;
             this.bookService = bookService;
-            this.userId = 1025643810;
+            this.userId = userId;
 
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.ColorScheme = new ColorScheme(

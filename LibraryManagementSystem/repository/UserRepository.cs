@@ -34,7 +34,7 @@ namespace LibraryManagementSystem.repository
                 dbContext.SaveChanges();
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }

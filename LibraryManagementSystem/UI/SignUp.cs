@@ -125,6 +125,7 @@ namespace LibraryManagementSystem.ui
             {
                 MessageBox.Show("Ya existe un usuario con la misma identificación.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            this.Hide();
         }
 
         // Helper method to check if a string contains only numeric characters
@@ -178,6 +179,11 @@ namespace LibraryManagementSystem.ui
                 eye2Picture.Image = Properties.Resources.vista;
                 passwordBox2.Show();
             }
+        }
+
+        private void SignUp_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Dispose();
         }
     }
 }
