@@ -19,7 +19,16 @@ Welcome to the Library Management System, a project designed to streamline libra
 ![Screenshot 1](LibraryManagementSystem/resources/Screenshot1.png)
 *Caption for Screenshot 1.*
 
-![Screenshot 2](path/to/screenshot2.png)
+![Screenshot 2](LibraryManagementSystem/resources/screenshot3.png)
+*Caption for Screenshot 2.*
+
+![Screenshot 2](LibraryManagementSystem/resources/screenshot4.png)
+*Caption for Screenshot 2.*
+
+![Screenshot 2](LibraryManagementSystem/resources/Screenshot5.png)
+*Caption for Screenshot 2.*
+
+![Screenshot 2](LibraryManagementSystem/resources/Screenshot6.png)
 *Caption for Screenshot 2.*
 
 ---
