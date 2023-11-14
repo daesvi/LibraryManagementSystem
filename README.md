@@ -13,6 +13,16 @@ Welcome to the Library Management System, a project designed to streamline libra
 
 
 ---
+
+## Images
+
+![Screenshot 1](LibraryManagementSystem/resources/Screenshot1.png)
+*Caption for Screenshot 1.*
+
+![Screenshot 2](path/to/screenshot2.png)
+*Caption for Screenshot 2.*
+
+---
 ## Table of Contents
 
 - [LMT (Library Management System)](#lmt-library-management-system)
