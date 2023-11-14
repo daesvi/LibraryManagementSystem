@@ -1,9 +1,9 @@
 # LMS (Library Management System)
-
+![image]({https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white})
 
 
 Welcome to the Library Management System, a project designed to streamline library operations by efficiently managing books, loans, returns, and user interactions.
-![image]({https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white})
+
 
 ---
 ## Table of Contents
