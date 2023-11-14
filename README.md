@@ -114,12 +114,12 @@ The project follows a layered architecture for better organization and separatio
 
 - **data:** Configuration for mapping with Entity Framework.
 - **interfaces:**
-  - **repository:** Interacts with the database.
-  - **service:** Business logic.
+  - **repository:** interface to implement per repository layer
+  - **service:** interface to implement per service layer
 - **model:** Contains entities.
-- **repository:**
+- **repository:** Interacts with the database.
 - **resources:** Images used in the project.
-- **service:**
+- **service:** Business logic.
 - **ui:** Forms of the user interface.
 
 This architecture promotes modularity and maintainability by separating database interactions, business logic, and the user interface into distinct layers.
