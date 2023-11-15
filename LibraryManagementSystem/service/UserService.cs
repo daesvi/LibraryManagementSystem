@@ -1,5 +1,7 @@
 ﻿using LibraryManagementSystem.interfaces;
 using LibraryManagementSystem.Model;
+using LibraryManagementSystem.ui;
+using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
@@ -42,18 +44,24 @@ namespace LibraryManagementSystem.services
 
         public bool AddUser(User user)
         {
-            // Try to get a user with the same id
-            User existingUser = _userRepository.GetById(user.Identification);
-
-            // If no exception is thrown, it means there is already a user with that id
-            if (existingUser != null)
+            try
             {
-                return false;
+                // Try to get a user with the same id
+                User existingUser = _userRepository.GetById(user.Identification);
+                // If no exception is thrown, it means there is already a user with that id
+                if (existingUser != null)
+                {
+                    return false;
+                }
+                else
+                {
+                    // If a user with the same ID was not found, add the new user
+                    _userRepository.Add(user);
+                    return true;
+                }
             }
-            else
+            catch (FormatException)
             {
-                // If a user with the same ID was not found, add the new user
-                _userRepository.Add(user);
                 return true;
             }
         }
