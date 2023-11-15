@@ -67,7 +67,7 @@ namespace LibraryManagementSystem.ui
             }
 
             // Validate that the IDs are valid
-            if (!int.TryParse(idBookText, out int bookId) || !int.TryParse(idUserText, out int userId))
+            if (!int.TryParse(idBookText, out int bookId) || !long.TryParse(idUserText, out long userId))
             {
                 MessageBox.Show("Por favor, ingrese IDs de libro y usuario válidos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -80,13 +80,15 @@ namespace LibraryManagementSystem.ui
                 return;
             }
 
-            // Create a Loan object with the data provided
-            // The loan date is taken from the real time in which the request is made.
-            Loan newLoan = new Loan(idBookText, long.Parse(idUserBox.Text), DateTime.Now, dueDate);
 
             // Use the service to add the loan
             try
             {
+                Book bookFound = bookService.GetBookById(bookId);
+                string nameBook = bookFound.Title;
+                // Create a Loan object with the data provided
+                // The loan date is taken from the real time in which the request is made.
+                Loan newLoan = new Loan(nameBook, userId, DateTime.Now, dueDate);
                 loanService.AddLoan(newLoan);
                 MessageBox.Show("Préstamo registrado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

@@ -11,7 +11,6 @@ C:\Users\Daniel\Source\Repos\daesvi\LibraryManagementSystem\LibraryManagementSys
 C:\Users\Daniel\Source\Repos\daesvi\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.exe
 C:\Users\Daniel\Source\Repos\daesvi\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.pdb
 C:\Users\Daniel\Source\Repos\daesvi\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.AssemblyReference.cache
-C:\Users\Daniel\Source\Repos\daesvi\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.SuggestedBindingRedirects.cache
 C:\Users\Daniel\Source\Repos\daesvi\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Properties.Resources.resources
 C:\Users\Daniel\Source\Repos\daesvi\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.GenerateResource.cache
 C:\Users\Daniel\Source\Repos\daesvi\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.CoreCompileInputs.cache
