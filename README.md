@@ -127,7 +127,7 @@ This architecture promotes modularity and maintainability by separating database
 ---
 ## Database
 
-MySQL is used as the database management system.
+SQL Server is used as the database management system.
 
 
 ---
