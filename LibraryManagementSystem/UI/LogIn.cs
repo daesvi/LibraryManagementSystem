@@ -22,13 +22,15 @@ namespace LibraryManagementSystem
         private readonly IUserService userService;
         private readonly IBookService bookService;
         private readonly ILoanService loanService;
+        private readonly ILibrarianService librarianService;
 
-        public LogIn(IUserService userService, ILoanService loanService, IBookService bookService)
+        public LogIn(IUserService userService, ILoanService loanService, IBookService bookService, ILibrarianService librarianService)
         {
             InitializeComponent();
             this.userService = userService;
             this.bookService = bookService;
             this.loanService = loanService;
+            this.librarianService = librarianService;
 
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.ColorScheme = new ColorScheme(
@@ -81,22 +83,27 @@ namespace LibraryManagementSystem
 
                 // Check if the username and password are valid
                 bool isValidLogin = userService.login(userId, password);
+                bool isValidLoginLibrarian = librarianService.login(userId, password);
 
-                if (isValidLogin)
+                if (isValidLogin || isValidLoginLibrarian)
                 {
                     // Password is correct, get the user
                     User loggedInUser = userService.GetById(userId);
+                    Librarian loggedInLibrarian = librarianService.GetById(userId);
                     // Check the "tipo" field and open the corresponding form
-                    if (loggedInUser != null)
+                    if (loggedInUser != null )
                     {
-                        if (loggedInUser.Tipo == 1)
+                        if (loggedInUser.Tipo == 1 )
                         {
                             MessageBox.Show("Inicio de sesión exitoso.");
                             // Open the form UserForm
                             UserForm userForm = new UserForm(loanService, bookService, userId);
                             userForm.ShowDialog();
                         }
-                        else if (loggedInUser.Tipo == 2)
+                    }
+                    if (loggedInLibrarian != null)
+                    {
+                        if (loggedInLibrarian.Tipo == 2)
                         {
                             MessageBox.Show("Inicio de sesión exitoso.");
                             // Open the form LibrarianForm

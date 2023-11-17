@@ -20,7 +20,7 @@ namespace LibraryManagementSystem.repository
             return dbContext.Librarians.ToList();
         }
 
-        public Librarian GetById(int id)
+        public Librarian GetById(long id)
         {
             return dbContext.Librarians.Find(id);
         }

@@ -11,6 +11,7 @@ namespace LibraryManagementSystem.services
     {
         private readonly IUserRepository _userRepository;
 
+
         public UserService(IUserRepository userRepository)
         {
             _userRepository = userRepository;
@@ -48,6 +49,7 @@ namespace LibraryManagementSystem.services
             {
                 // Try to get a user with the same id
                 User existingUser = _userRepository.GetById(user.Identification);
+
                 // If no exception is thrown, it means there is already a user with that id
                 if (existingUser != null)
                 {

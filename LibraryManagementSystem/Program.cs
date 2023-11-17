@@ -31,8 +31,10 @@ namespace LibraryManagementSystem
             IBookService bookService = new BookService(bookRepository);
             ILoanRepository loanRepository = new LoanRepository(libraryContext);
             ILoanService loanService = new LoanService(loanRepository);
+            ILibrarianRepository librarianRepository = new LibrarianRepository(libraryContext);
+            ILibrarianService librarianService = new LibrarianService(librarianRepository);
 
-            Application.Run(new LogIn(userService, loanService, bookService));
+            Application.Run(new LogIn(userService, loanService, bookService, librarianService));
         }
     }
 }

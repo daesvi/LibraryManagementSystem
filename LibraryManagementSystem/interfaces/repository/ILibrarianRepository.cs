@@ -6,7 +6,7 @@ namespace LibraryManagementSystem.interfaces
     public interface ILibrarianRepository
     {
         IEnumerable<Librarian> GetAll();
-        Librarian GetById(int id);
+        Librarian GetById(long id);
         void Add(Librarian librarian);
     }
 }
